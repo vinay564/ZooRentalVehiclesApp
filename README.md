@@ -1,5 +1,5 @@
 # ZooRentalVehiclesApp
-This is used for rent the vehicles in the Zoo 
+This is used for rent the vehicles in the Zoo<br>
 CS44542 Section 5 (OOP) Group Project - Assignment 8
 
 #### Collabrators:
@@ -12,4 +12,4 @@ CS44542 Section 5 (OOP) Group Project - Assignment 8
  * Satish Vagulapuram 
  ---
  #### Jira project Link
-Lets go to amazon <https://zooappnwmissouri.atlassian.net/jira/software/projects/TC44542/boards/1> 
+[Click here to go Jira] (https://zooappnwmissouri.atlassian.net/jira/software/projects/TC44542/boards/1) 
