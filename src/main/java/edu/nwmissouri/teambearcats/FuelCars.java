@@ -6,7 +6,7 @@ package edu.nwmissouri.teambearcats;
 
 /**
  *
- * @author S545164
+ * @author Nikhil Porika
  */
 public class FuelCars {
     
