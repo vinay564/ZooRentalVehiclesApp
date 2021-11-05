@@ -15,11 +15,11 @@ public abstract class RentalHeavyVehicles {
     protected String carryHeavyLoad ="carryingHeavyLoad";
     protected double vehicleWeight=2000.50;
 
-//    public RentalHeavyVehicles(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-//        this.vehicleName = vehicleName;
-//        this.carryHeavyLoad = carryHeavyLoad;
-//        this.vehicleWeight = vehicleWeight;
-//    }
+   public RentalHeavyVehicles(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        this.vehicleName = vehicleName;
+        this.carryHeavyLoad = carryHeavyLoad;
+        this.vehicleWeight = vehicleWeight;
+    }
 
     
     
