@@ -59,7 +59,14 @@ public class Bicycle extends RentalLightVehicles {
           System.out.println("I go with more speed on road");
     }
 
-    
+     /**
+     * The Gear method.
+     *
+     */
+    public void gear()
+    {
+     System.out.println("Im a gear bicycle");  
+    }
 
   
    
