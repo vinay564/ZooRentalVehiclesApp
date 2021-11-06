@@ -5,6 +5,8 @@
 package edu.nwmissouri.teambearcats;
 
 /**
+ * RentalLightVehicles class (derived subclass of the superclass
+ * ZooRentalVehiclesApp)
  *
  * @author Sai Kaushik Beeram
  */
@@ -25,7 +27,7 @@ public abstract class RentalLightVehicles {
         this.numOfPassengers = numOfPassengers;
         this.numOfMiles = numOfMiles;
     }
-    
+
     /**
      * move() - general method for vehicle movement
      */
@@ -35,7 +37,6 @@ public abstract class RentalLightVehicles {
      * speak() - general method for vehicle speed
      */
     public abstract void speed();
-    
 
     public String getVehicleName() {
         return vehicleName;
@@ -49,12 +50,8 @@ public abstract class RentalLightVehicles {
         return numOfPassengers;
     }
 
- 
-
     public Double getNumOfMiles() {
         return numOfMiles;
     }
 
-
-    
 }
