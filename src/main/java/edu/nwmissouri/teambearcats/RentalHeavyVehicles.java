@@ -11,7 +11,7 @@ package edu.nwmissouri.teambearcats;
 public abstract class RentalHeavyVehicles {
     
     
-    protected String vehicleName ="no name";
+    protected String vehicleName ="HeavyVehicles";
     protected String carryHeavyLoad ="carryingHeavyLoad";
     protected double vehicleWeight=2000.50;
 
@@ -21,8 +21,6 @@ public abstract class RentalHeavyVehicles {
         this.vehicleWeight = vehicleWeight;
     }
 
-    
-    
 
     /**
      * move() - general method for vehicle movement 
@@ -43,25 +41,12 @@ public abstract class RentalHeavyVehicles {
         return vehicleName;
     }
 
-    public void setVehicleName(String vehicleName) {
-        this.vehicleName = vehicleName;
-    }
-
     public String getCarryHeavyLoad() {
         return carryHeavyLoad;
-    }
-
-    public void setCarryHeavyLoad(String carryHeavyLoad) {
-        this.carryHeavyLoad = carryHeavyLoad;
     }
 
     public double getVehicleWeight() {
         return vehicleWeight;
     }
 
-    public void setVehicleWeight(double vehicleWeight) {
-        this.vehicleWeight = vehicleWeight;
-    }
-    
-    
-}
+ }

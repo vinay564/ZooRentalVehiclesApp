@@ -10,18 +10,25 @@ package edu.nwmissouri.teambearcats;
  */
 public class Bus extends RentalHeavyVehicles {
         
-       int numOfWheels = 6;
-       double ticketPrice = 5.5;
+       int numOfWheels ;
+       double ticketPrice ;
     
-   
+   /**
+    * return seatingCapacity
+    * @return 
+    */
       public int seatingCapacity(){
           return 1;
     }
     
+       /**
+    * return consumes fuel Type
+    * @return 
+    */
     public void consumes(){
          System.out.println("I consumes more fuel");
     } 
-        @Override
+      @Override
     public void move(){
      System.out.println("I wan to move move! move!");
       
@@ -29,12 +36,12 @@ public class Bus extends RentalHeavyVehicles {
 
     @Override
     public void capacity() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    System.out.println("My capacity is 2 ");    
     }
 
     @Override
     public void price() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+           System.out.println("My price is very less");   
     }
 
     
