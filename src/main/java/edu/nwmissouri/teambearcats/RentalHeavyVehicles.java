@@ -5,25 +5,25 @@
 package edu.nwmissouri.teambearcats;
 
 /**
+ * RentalHeavyVehicles class (derived subclass of the superclass
+ * ZooRentalVehiclesApp)
  *
  * @author Sai Kaushik Beeram
  */
 public abstract class RentalHeavyVehicles {
-    
-    
-    protected String vehicleName ="HeavyVehicles";
-    protected String carryHeavyLoad ="carryingHeavyLoad";
-    protected double vehicleWeight=2000.50;
 
-   public RentalHeavyVehicles(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+    protected String vehicleName = "HeavyVehicles";
+    protected String carryHeavyLoad = "carryingHeavyLoad";
+    protected double vehicleWeight = 2000.50;
+
+    public RentalHeavyVehicles(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
         this.vehicleName = vehicleName;
         this.carryHeavyLoad = carryHeavyLoad;
         this.vehicleWeight = vehicleWeight;
     }
 
-
     /**
-     * move() - general method for vehicle movement 
+     * move() - general method for vehicle movement
      */
     public abstract void move();
 
@@ -49,4 +49,4 @@ public abstract class RentalHeavyVehicles {
         return vehicleWeight;
     }
 
- }
+}
