@@ -5,13 +5,14 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *
+ * Bus class (derived subclass of the superclass RentalHeavyVehicles)
  * @author Vinay Manavarthi
+ * 
  */
 public class Bus extends RentalHeavyVehicles {
         
-      private int numOfWheels =8 ;
-      private double ticketPrice = 0.0 ;
+      private int numOfWheels = 8 ;
+      private double ticketPrice = 5.0;
 
     public int getNumOfWheels() {
         return numOfWheels;

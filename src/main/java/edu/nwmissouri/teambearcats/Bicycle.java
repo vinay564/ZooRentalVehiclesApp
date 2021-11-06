@@ -9,8 +9,8 @@ package edu.nwmissouri.teambearcats;
  * @author Vinay Manavarthi
  */
 public class Bicycle extends RentalLightVehicles {
-    private int numOfWheels ;
-    private double priceIn_dollars ;
+    private int numOfWheels = 2 ;
+    private double priceIn_dollars = 5.5;
 
     public int getNumOfWheels() {
         return numOfWheels;
