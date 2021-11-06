@@ -74,5 +74,10 @@ public class ElectricCars extends RentalLightVehicles {
     public void speed() {
         System.out.println("In the Zoo the electric car can travel with a certain speed which is for the suitable to the zoo situations");
     }
-
+    /*
+    safetyMeasures() cars provides safety measures
+    */
+    public void safetyMeasures() {
+        System.out.println("Electric cars has more safety by provding airbags");
+    }
 }
