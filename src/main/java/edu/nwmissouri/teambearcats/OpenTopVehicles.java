@@ -5,64 +5,68 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *
- * @author S545147 Pranay Bhargav Reddy Bakaram
+ *OpenTopVehicles class (derived subclass of the superclass RentalLightvehicles)
+ * 
+ * @author Pranay Bhargav Reddy Bakaram (s545147)
  */
 public class OpenTopVehicles extends RentalLightVehicles {
-    
+    private int numOfWheels = 4;
+    private double price=0.0;
+    private double mile=0.0;
 
-    
-
-/*
-    overiding speed() from RentalLightVehicles class.
-    */
-    @Override
-    public void speed(){
-        System.out.printf("I'm %s. I'm an Okapi!");
+    public int getNumOfWheels() {
+        return numOfWheels;
     }
-/*
-    overiding move() from Animal Class.
+
+    public void setNumOfWheels(int numOfWheels) {
+        this.numOfWheels = numOfWheels;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getMile() {
+        return mile;
+    }
+
+    public void setMile(double mile) {
+        this.mile = mile;
+    }
+
+    @Override
+    public String toString() {
+        return "OpenTopVechiles{" + "numOfWheels=" + numOfWheels + ", price=" + price + ", mile=" + mile + '}';
+    }
+
+    /**
+     * OpenTopVehicles constructor
+     * @param vehicleName - The Name of the vehicle
+     * @param booking -  The Different booking systems
+     * @param numOfPassengers - Number of Passengers who travel
+     * @param numOfMiles - Number of Miles car travels
+     */
+    public OpenTopVehicles(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+        super(vehicleName, booking, numOfPassengers, numOfMiles);
+    }
+   /**
+    * using move() method.
     */
     @Override
     public void move() {
-        System.out.println("hop hop hop");
-    }
-    
-    public void eat(){
-        System.out.println("I eat plants");
+        System.out.println("The OpenTopvehicles which is available in the Zoo moves on road. By using them visitors can enjoy the natural air ");
     }
     /*
-    This method will initialize the values and calls the addition method.
+    using Speed() method.
     */
-    public void addition() {
-        double a = 2.5;
-        int b = 2;
-        double c = getOkapiAddition(a, b);
-        System.out.printf("I know OkapiAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    @Override
+    public void speed() {
+        System.out.println("The Top speed of the OpenTopvechiles is 240kmph");
     }
-    /**
-   * This method will calculate the sum of two numbers
-   * @param x double value which is passed from addition() 
-   * @param y int value which is passed from addition()
-   * @return it returns the sum of two numbers
-   */
-    public double getOkapiAddition(double x, int y) {
-        return x + y;
+    
+    
     }
-
-    public static void main(String[] args)
-    {
-    /**
-     * The application's entry point
-     * This is the main method which makes use of addition,speak,move method and enumerated types.
-     * @param args an array of command-line arguments for the application
-    */
-
-        OpenTopVehicles a;
-        a = new OpenTopVehicles("Pranay Bhargav Reddy Bakaram");
-        a.speak();
-        a.move();
-        a.eat();
-        a.addition();
-    }
-}
