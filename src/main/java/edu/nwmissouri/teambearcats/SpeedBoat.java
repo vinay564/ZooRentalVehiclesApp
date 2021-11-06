@@ -5,7 +5,7 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *
+ *SpeedBoat (derived subclass from the superclass RentalLightVehicles)
  * @author Rajasheekhar Kota
  */
 public class SpeedBoat extends RentalLightVehicles
