@@ -5,7 +5,7 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *
+ *enum class
  * @author Satish Vagulapuram
  */
 public enum VehicleColor {
