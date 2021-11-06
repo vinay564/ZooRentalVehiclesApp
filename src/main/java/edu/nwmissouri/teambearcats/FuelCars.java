@@ -72,7 +72,7 @@ public class FuelCars extends RentalLightVehicles {
     }
 
     /*
-    move method for the vehicle fuelcars
+    move() - method for the vehicle fuelcars
      */
     @Override
     public void move() {
@@ -80,11 +80,17 @@ public class FuelCars extends RentalLightVehicles {
     }
 
     /*
-    speed method for vechile fuelcars
+    speed() - method for vechile fuelcars
      */
     @Override
     public void speed() {
         System.out.println("The fuelcars mantains the average speed of the fuelcars ");
     }
-
+       
+    /*
+     carModel() -  has different carddmodels
+    */
+    public void carModel() {
+        System.out.println("The fuelcars has provides so many car models");
+    }
 }
