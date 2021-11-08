@@ -16,4 +16,4 @@ CS44542 Section 5 (OOP) Group Project - Assignment 8
 <br>
 Outlook and Github integrated in Jira
 ![Team](https://github.com/vinay564/ZooRentalVehiclesApp/blob/main/src/main/resources/Assets/Jira1.png)<br>
-![Jira Board](ZooRentalVehiclesApp\target\classes\Assets\Jira2.png)
+![Jira Board](https://github.com/vinay564/ZooRentalVehiclesApp/blob/main/src/main/resources/Assets/Jira2.png)
