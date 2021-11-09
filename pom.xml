@@ -50,6 +50,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.3.1</version>
                 <configuration>
+  
                     <reportOutputDirectory>${basedir}</reportOutputDirectory>
                     <destDir>docs</destDir>
                     <sourcepath>${basedir}src\main\java\edu\nwmissouri\teambearcats</sourcepath>
