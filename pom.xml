@@ -52,7 +52,7 @@
                 <configuration>
                     <reportOutputDirectory>${basedir}</reportOutputDirectory>
                     <destDir>docs</destDir>
-                    <sourcepath>${basedir}/src/main/java/</sourcepath>
+                    <sourcepath>${basedir}src\main\java\edu\nwmissouri\teambearcats</sourcepath>
                     <sourceFileExcludes>     
                     </sourceFileExcludes>
                 </configuration>
