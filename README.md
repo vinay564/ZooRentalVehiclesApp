@@ -15,7 +15,15 @@ CS44542 Section 5 (OOP) Group Project - Assignment 8
 
  [Click here to go API](https://vinay564.github.io/ZooRentalVehiclesApp/edu/nwmissouri/teambearcats/package-summary.html) 
 
-
+ ---
+ #### Github profiles
+ * Nikhil Porika(https://github.com/pnikhil24)
+ * Pranay Bhargav Reddy Bakaram(https://github.com/Pranayreddybakaram)
+ * Rajashekhar Kota(https://github.com/rajashekharkota)
+ * Sai Kaushik Beeram(https://github.com/kaushik-093)
+ * Satish Vagulapuram (https://github.com/VagulapuramSatish)
+ * Vinay Manavarthi(https://github.com/vinay564)
+---
  #### Jira project Link
 [Click here to go Jira](https://zooappnwmissouri.atlassian.net/jira/software/projects/TC44542/boards/1) 
 <br>
