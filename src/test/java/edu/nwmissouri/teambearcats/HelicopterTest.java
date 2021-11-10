@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,12 +17,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Vinay Manavarthi
  */
 public class HelicopterTest {
-    
+       public static Helicopter instance;
+
     public HelicopterTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
+                  instance = new Helicopter(2,"Rohan",4,"Helicopterautoengine","food",1.2);
+
     }
     
     @AfterAll
@@ -42,12 +46,10 @@ public class HelicopterTest {
     @Test
     public void testGetNumOfBlades() {
         System.out.println("getNumOfBlades");
-        Helicopter instance = null;
         int expResult = 0;
         int result = instance.getNumOfBlades();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,10 +59,8 @@ public class HelicopterTest {
     public void testSetNumOfBlades() {
         System.out.println("setNumOfBlades");
         int numOfBlades = 0;
-        Helicopter instance = null;
         instance.setNumOfBlades(numOfBlades);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -69,12 +69,10 @@ public class HelicopterTest {
     @Test
     public void testGetNameOfPillots() {
         System.out.println("getNameOfPillots");
-        Helicopter instance = null;
         String expResult = "";
         String result = instance.getNameOfPillots();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -84,10 +82,8 @@ public class HelicopterTest {
     public void testSetNameOfPillots() {
         System.out.println("setNameOfPillots");
         String nameOfPillots = "";
-        Helicopter instance = null;
         instance.setNameOfPillots(nameOfPillots);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -96,12 +92,10 @@ public class HelicopterTest {
     @Test
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
-        Helicopter instance = null;
         int expResult = 0;
         int result = instance.getDistanceTravelled();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -111,10 +105,8 @@ public class HelicopterTest {
     public void testSetDistanceTravelled() {
         System.out.println("setDistanceTravelled");
         int distanceTravelled = 0;
-        Helicopter instance = null;
         instance.setDistanceTravelled(distanceTravelled);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -123,12 +115,10 @@ public class HelicopterTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Helicopter instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -137,10 +127,8 @@ public class HelicopterTest {
     @Test
     public void testMove() {
         System.out.println("move");
-        Helicopter instance = null;
         instance.move();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -149,10 +137,8 @@ public class HelicopterTest {
     @Test
     public void testCapacity() {
         System.out.println("capacity");
-        Helicopter instance = null;
         instance.capacity();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -161,10 +147,8 @@ public class HelicopterTest {
     @Test
     public void testPrice() {
         System.out.println("price");
-        Helicopter instance = null;
         instance.price();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -173,10 +157,8 @@ public class HelicopterTest {
     @Test
     public void testDuration() {
         System.out.println("duration");
-        Helicopter instance = null;
         instance.duration();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
