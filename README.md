@@ -11,9 +11,6 @@ CS44542 Section 5 (OOP) Group Project - Assignment 8
  * Sai Kaushik Beeram
  * Satish Vagulapuram 
  ---
-  ##### API Link
-    [Click here to go API](https://vinay564.github.io/ZooRentalVehiclesApp/edu/nwmissouri/teambearcats/package-summary.html)<br><br>
- ---
  #### Jira project Link
 [Click here to go Jira](https://zooappnwmissouri.atlassian.net/jira/software/projects/TC44542/boards/1) 
 <br>
