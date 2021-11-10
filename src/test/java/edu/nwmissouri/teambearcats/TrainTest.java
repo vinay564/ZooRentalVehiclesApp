@@ -12,8 +12,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test TrainTest using JUnit5
- * @author Sai Kaushik Beeram
+ *  Test using TrainTest using JUnit5
+ *  @author Sai Kaushik Beeram
  */
 public class TrainTest {
     
@@ -41,6 +41,11 @@ public class TrainTest {
      */
     @Test
     public void testMove() {
+        System.out.println("move");
+        Train instance = null;
+        instance.move();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -48,6 +53,11 @@ public class TrainTest {
      */
     @Test
     public void testCapacity() {
+        System.out.println("capacity");
+        Train instance = null;
+        instance.capacity();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -55,6 +65,11 @@ public class TrainTest {
      */
     @Test
     public void testPrice() {
+        System.out.println("price");
+        Train instance = null;
+        instance.price();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -62,6 +77,13 @@ public class TrainTest {
      */
     @Test
     public void testGetDistanceTravelled() {
+        System.out.println("getDistanceTravelled");
+        Train instance = null;
+        double expResult = 0.0;
+        double result = instance.getDistanceTravelled();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -69,6 +91,12 @@ public class TrainTest {
      */
     @Test
     public void testSetDistanceTravelled() {
+        System.out.println("setDistanceTravelled");
+        double distanceTravelled = 0.0;
+        Train instance = null;
+        instance.setDistanceTravelled(distanceTravelled);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -76,6 +104,13 @@ public class TrainTest {
      */
     @Test
     public void testGetNumOfCoaches() {
+        System.out.println("getNumOfCoaches");
+        Train instance = null;
+        int expResult = 0;
+        int result = instance.getNumOfCoaches();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -83,6 +118,12 @@ public class TrainTest {
      */
     @Test
     public void testSetNumOfCoaches() {
+        System.out.println("setNumOfCoaches");
+        int numOfCoaches = 0;
+        Train instance = null;
+        instance.setNumOfCoaches(numOfCoaches);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -90,6 +131,13 @@ public class TrainTest {
      */
     @Test
     public void testGetTicketPrice() {
+        System.out.println("getTicketPrice");
+        Train instance = null;
+        double expResult = 0.0;
+        double result = instance.getTicketPrice();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -97,6 +145,12 @@ public class TrainTest {
      */
     @Test
     public void testSetTicketPrice() {
+        System.out.println("setTicketPrice");
+        double ticketPrice = 0.0;
+        Train instance = null;
+        instance.setTicketPrice(ticketPrice);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -104,6 +158,13 @@ public class TrainTest {
      */
     @Test
     public void testToString() {
+        System.out.println("toString");
+        Train instance = null;
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }
