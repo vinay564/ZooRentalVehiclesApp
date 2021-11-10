@@ -12,8 +12,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @author Vinay Manavarthi
+ * Test using AirplaneTest using JUnit5
+ * @author Satish Vagulapuram
  */
 public class AirplaneTest {
     
