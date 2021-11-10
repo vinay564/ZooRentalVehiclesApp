@@ -9,9 +9,9 @@ package edu.nwmissouri.teambearcats;
  * @author Rajashekhar Kota
  */
 public enum FuelType {
-    Diesel,
-    Petrol,
-    AviationKerosene,
-    Gas,
-    Electric
+    DIESEL,
+    PETROL,
+    AVIATIONKEROSENE,
+    GAS,
+    ELECTRIC
 }
