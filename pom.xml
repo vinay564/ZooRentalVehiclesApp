@@ -52,7 +52,7 @@
                 <configuration>
                     <reportOutputDirectory>${basedir}</reportOutputDirectory>
                     <destDir>docs</destDir>
-                    <sourcepath>${basedir}/docs/edu/nwmissouri/teambearcats</sourcepath>
+                    <sourcepath>${basedir}/edu/nwmissouri/teambearcats</sourcepath>
                     <sourceFileExcludes>     
                     </sourceFileExcludes>
                 </configuration>
