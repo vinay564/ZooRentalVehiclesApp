@@ -60,7 +60,7 @@ public class OverLandTrucks extends RentalHeavyVehicles {
     * @return 
     */
     public void consumes(){
-         System.out.println("I takes large amount of fuel when compared to lightvehicles. I takes "+);
+         System.out.println("I takes large amount of fuel when compared to lightvehicles. I takes "+FuelType.PETROL);
     } 
     /**
      * using move method
