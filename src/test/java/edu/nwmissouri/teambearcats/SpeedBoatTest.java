@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import static edu.nwmissouri.teambearcats.LuxuryBoatSafariTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,12 +17,15 @@ import static org.junit.jupiter.api.Assertions.*;
  *  @author Rajasheekhar Kota
  */
 public class SpeedBoatTest {
-    
+                   public static SpeedBoat instance;
+
     public SpeedBoatTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
+        instance = new SpeedBoat("NewBoat","online",1224,55.2);
+
     }
     
     @AfterAll
@@ -42,10 +46,8 @@ public class SpeedBoatTest {
     @Test
     public void testMove() {
         System.out.println("move");
-        SpeedBoat instance = null;
         instance.move();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -54,10 +56,8 @@ public class SpeedBoatTest {
     @Test
     public void testSpeed() {
         System.out.println("speed");
-        SpeedBoat instance = null;
         instance.speed();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -66,10 +66,8 @@ public class SpeedBoatTest {
     @Test
     public void testNumberOfSeats() {
         System.out.println("NumberOfSeats");
-        SpeedBoat instance = null;
         instance.NumberOfSeats();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -78,12 +76,10 @@ public class SpeedBoatTest {
     @Test
     public void testGetTicketprice() {
         System.out.println("getTicketprice");
-        SpeedBoat instance = null;
         double expResult = 0.0;
         double result = instance.getTicketprice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -93,10 +89,8 @@ public class SpeedBoatTest {
     public void testSetTicketprice() {
         System.out.println("setTicketprice");
         double ticketprice = 0.0;
-        SpeedBoat instance = null;
         instance.setTicketprice(ticketprice);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -105,12 +99,10 @@ public class SpeedBoatTest {
     @Test
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
-        SpeedBoat instance = null;
         double expResult = 0.0;
         double result = instance.getDistanceTravelled();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -120,10 +112,8 @@ public class SpeedBoatTest {
     public void testSetDistanceTravelled() {
         System.out.println("setDistanceTravelled");
         double distanceTravelled = 0.0;
-        SpeedBoat instance = null;
         instance.setDistanceTravelled(distanceTravelled);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -132,12 +122,10 @@ public class SpeedBoatTest {
     @Test
     public void testGetNumOfPassengers() {
         System.out.println("getNumOfPassengers");
-        SpeedBoat instance = null;
         int expResult = 0;
         int result = instance.getNumOfPassengers();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -147,10 +135,8 @@ public class SpeedBoatTest {
     public void testSetNumOfPassengers() {
         System.out.println("setNumOfPassengers");
         int numOfPassengers = 0;
-        SpeedBoat instance = null;
         instance.setNumOfPassengers(numOfPassengers);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -159,12 +145,10 @@ public class SpeedBoatTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        SpeedBoat instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
