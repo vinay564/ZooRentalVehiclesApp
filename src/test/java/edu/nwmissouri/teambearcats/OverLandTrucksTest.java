@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,12 +17,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author S545147
  */
 public class OverLandTrucksTest {
-    
+      public static OverLandTrucks instance;
+ 
     public OverLandTrucksTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
+           instance = new OverLandTrucks("OverLandTrucks"," Booking",5.6);
+
     }
     
     @AfterAll
@@ -42,12 +46,10 @@ public class OverLandTrucksTest {
     @Test
     public void testGetNumOfWheels() {
         System.out.println("getNumOfWheels");
-        OverLandTrucks instance = null;
         int expResult = 0;
         int result = instance.getNumOfWheels();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,10 +59,8 @@ public class OverLandTrucksTest {
     public void testSetNumOfWheels() {
         System.out.println("setNumOfWheels");
         int numOfWheels = 0;
-        OverLandTrucks instance = null;
         instance.setNumOfWheels(numOfWheels);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -69,12 +69,10 @@ public class OverLandTrucksTest {
     @Test
     public void testGetPrice_dollar() {
         System.out.println("getPrice_dollar");
-        OverLandTrucks instance = null;
         double expResult = 0.0;
         double result = instance.getPrice_dollar();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -84,10 +82,8 @@ public class OverLandTrucksTest {
     public void testSetPrice_dollar() {
         System.out.println("setPrice_dollar");
         double ticketPrice = 0.0;
-        OverLandTrucks instance = null;
         instance.setPrice_dollar(ticketPrice);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -96,12 +92,10 @@ public class OverLandTrucksTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        OverLandTrucks instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -110,12 +104,10 @@ public class OverLandTrucksTest {
     @Test
     public void testSeatingCapacity() {
         System.out.println("seatingCapacity");
-        OverLandTrucks instance = null;
         int expResult = 0;
         int result = instance.seatingCapacity();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -124,10 +116,8 @@ public class OverLandTrucksTest {
     @Test
     public void testConsumes() {
         System.out.println("consumes");
-        OverLandTrucks instance = null;
         instance.consumes();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -136,10 +126,8 @@ public class OverLandTrucksTest {
     @Test
     public void testMove() {
         System.out.println("move");
-        OverLandTrucks instance = null;
         instance.move();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -148,10 +136,8 @@ public class OverLandTrucksTest {
     @Test
     public void testCapacity() {
         System.out.println("capacity");
-        OverLandTrucks instance = null;
         instance.capacity();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -160,10 +146,8 @@ public class OverLandTrucksTest {
     @Test
     public void testPrice() {
         System.out.println("price");
-        OverLandTrucks instance = null;
         instance.price();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -172,10 +156,8 @@ public class OverLandTrucksTest {
     @Test
     public void testColor() {
         System.out.println("color");
-        OverLandTrucks instance = null;
         instance.color();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
