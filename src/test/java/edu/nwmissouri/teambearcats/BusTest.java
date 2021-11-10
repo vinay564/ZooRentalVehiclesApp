@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import static edu.nwmissouri.teambearcats.BicycleTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test class for Bus class using JUnit5
+ *
  * @author Vinay Manavarthi
  */
 public class BusTest {
@@ -20,8 +21,12 @@ public class BusTest {
     public BusTest() {
     }
     
+     public static Bus instance;
+    
     @BeforeAll
-    public static void setUpClass() {
+    public static void setUpClass() {     
+                instance = new Bus("Volvo","Carrying heavy load",4.6);
+     
     }
     
     @AfterAll
@@ -41,6 +46,11 @@ public class BusTest {
      */
     @Test
     public void testGetNumOfWheels() {
+        System.out.println("getNumOfWheels");
+     
+        int expResult = 0;
+        int result = instance.getNumOfWheels();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -48,6 +58,10 @@ public class BusTest {
      */
     @Test
     public void testSetNumOfWheels() {
+        System.out.println("setNumOfWheels");
+        int numOfWheels = 0;
+        instance.setNumOfWheels(numOfWheels);
+        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -55,6 +69,12 @@ public class BusTest {
      */
     @Test
     public void testGetTicketPrice() {
+        System.out.println("getTicketPrice");
+        double expResult = 0.0;
+        double result = instance.getTicketPrice();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+    
     }
 
     /**
@@ -62,6 +82,10 @@ public class BusTest {
      */
     @Test
     public void testSetTicketPrice() {
+        System.out.println("setTicketPrice");
+        double ticketPrice = 0.0;
+        instance.setTicketPrice(ticketPrice);
+        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -69,6 +93,11 @@ public class BusTest {
      */
     @Test
     public void testToString() {
+        System.out.println("toString");
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -76,6 +105,11 @@ public class BusTest {
      */
     @Test
     public void testSeatingCapacity() {
+        System.out.println("seatingCapacity");
+        int expResult = 0;
+        int result = instance.seatingCapacity();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -83,6 +117,11 @@ public class BusTest {
      */
     @Test
     public void testConsumes() {
+        System.out.println("consumes");
+      
+        instance.consumes();
+        // TODO review the generated test code and remove the default call to fail.
+      
     }
 
     /**
@@ -90,6 +129,11 @@ public class BusTest {
      */
     @Test
     public void testMove() {
+        System.out.println("move");
+      
+        instance.move();
+        // TODO review the generated test code and remove the default call to fail.
+       
     }
 
     /**
@@ -97,6 +141,9 @@ public class BusTest {
      */
     @Test
     public void testCapacity() {
+        System.out.println("capacity");
+        instance.capacity();
+        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -104,6 +151,11 @@ public class BusTest {
      */
     @Test
     public void testPrice() {
+        System.out.println("price");
+  
+        instance.price();
+        // TODO review the generated test code and remove the default call to fail.
+     
     }
     
 }

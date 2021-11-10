@@ -12,6 +12,10 @@ public class Bicycle extends RentalLightVehicles {
     private int numOfWheels = 2 ;
     private double priceIn_dollars = 5.5;
 
+    public Bicycle(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+        super(vehicleName, booking, numOfPassengers, numOfMiles);
+    }
+    
     public int getNumOfWheels() {
         return numOfWheels;
     }
@@ -41,11 +45,7 @@ public class Bicycle extends RentalLightVehicles {
      * * @param booking - This is for ticket booking
      * * @param numOfPassengers - This is numOfPassengers in the bus
      */
-    public Bicycle(int numOfWheels, double priceIn_dollars, String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
-        super(vehicleName, booking, numOfPassengers, numOfMiles);
-        this.numOfWheels = numOfWheels;
-        this.priceIn_dollars = priceIn_dollars;
-    }
+    
     
     
     

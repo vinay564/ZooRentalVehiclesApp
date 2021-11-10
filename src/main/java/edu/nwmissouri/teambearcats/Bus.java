@@ -14,6 +14,19 @@ public class Bus extends RentalHeavyVehicles {
       private int numOfWheels = 8 ;
       private double ticketPrice = 5.0;
 
+     /**
+     * Bus Constructor
+     * 
+     * @param vehicleName - This is the vehicle name of the BUS
+     * @param carryHeavyLoad - Bus carries the heavy load
+     * @param vehicleWeight - This is vehicle weight
+     */
+
+
+    public Bus(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        super(vehicleName, carryHeavyLoad, vehicleWeight);
+    }
+
     public int getNumOfWheels() {
         return numOfWheels;
     }
@@ -34,16 +47,7 @@ public class Bus extends RentalHeavyVehicles {
     public String toString() {
         return "Bus{" + "numOfWheels=" + numOfWheels + ", ticketPrice=" + ticketPrice + '}';
     }
-    /**
-     * Bus Constructor
-     * 
-     * @param vehicleName - This is the vehicle name of the BUS
-     * @param carryHeavyLoad - Bus carries the heavy load
-     * @param vehicleWeight - This is vehicle weight
-     */
-    public Bus(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-        super(vehicleName, carryHeavyLoad, vehicleWeight);
-    }
+  
       
       
     
