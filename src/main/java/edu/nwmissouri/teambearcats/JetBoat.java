@@ -33,7 +33,7 @@ public class JetBoat extends RentalLightVehicles {
      */
     
     public void safetyMeasures(){
-        System.out.println("");
+        System.out.println("SfetyMeasures must be included");
     } 
     /**
      * experience() - general method for experience
