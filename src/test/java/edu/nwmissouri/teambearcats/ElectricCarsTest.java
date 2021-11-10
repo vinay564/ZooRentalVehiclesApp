@@ -17,11 +17,14 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class ElectricCarsTest {
     
+   public static ElectricCars instance;
     public ElectricCarsTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
+          instance = new ElectricCars("audi","Online Booking",4,5.6);
+  
     }
     
     @AfterAll
@@ -42,12 +45,11 @@ public class ElectricCarsTest {
     @Test
     public void testGetNumOfWheels() {
         System.out.println("getNumOfWheels");
-        ElectricCars instance = null;
         int expResult = 0;
         int result = instance.getNumOfWheels();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -57,10 +59,9 @@ public class ElectricCarsTest {
     public void testSetNumOfWheels() {
         System.out.println("setNumOfWheels");
         int numOfWheels = 0;
-        ElectricCars instance = null;
         instance.setNumOfWheels(numOfWheels);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -69,12 +70,11 @@ public class ElectricCarsTest {
     @Test
     public void testGetPrice() {
         System.out.println("getPrice");
-        ElectricCars instance = null;
-        double expResult = 0.0;
+        double expResult = 25.7;
         double result = instance.getPrice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -84,10 +84,9 @@ public class ElectricCarsTest {
     public void testSetPrice() {
         System.out.println("setPrice");
         double price = 0.0;
-        ElectricCars instance = null;
         instance.setPrice(price);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -96,12 +95,11 @@ public class ElectricCarsTest {
     @Test
     public void testGetMile() {
         System.out.println("getMile");
-        ElectricCars instance = null;
-        double expResult = 0.0;
+        double expResult = 15.4;
         double result = instance.getMile();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -111,10 +109,9 @@ public class ElectricCarsTest {
     public void testSetMile() {
         System.out.println("setMile");
         double mile = 0.0;
-        ElectricCars instance = null;
         instance.setMile(mile);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -123,12 +120,11 @@ public class ElectricCarsTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        ElectricCars instance = null;
-        String expResult = "";
+        String expResult = "ElectricCars{numOfWheels=0, price=25.7, mile=15.4}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -137,10 +133,9 @@ public class ElectricCarsTest {
     @Test
     public void testMove() {
         System.out.println("move");
-        ElectricCars instance = null;
         instance.move();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -149,10 +144,9 @@ public class ElectricCarsTest {
     @Test
     public void testSpeed() {
         System.out.println("speed");
-        ElectricCars instance = null;
         instance.speed();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -161,10 +155,9 @@ public class ElectricCarsTest {
     @Test
     public void testSafetyMeasures() {
         System.out.println("safetyMeasures");
-        ElectricCars instance = null;
         instance.safetyMeasures();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
