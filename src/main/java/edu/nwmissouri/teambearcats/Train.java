@@ -76,9 +76,9 @@ public class Train extends RentalHeavyVehicles {
     /**
      * train constructor
      *
-     * @param vehicleName
-     * @param carryHeavyLoad
-     * @param vehicleWeight
+     * @param vehicleName is determines the train
+     * @param carryHeavyLoad it can carry many goods 
+     * @param vehicleWeight it is Heavy Vehicles
      */
     public Train(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
         super(vehicleName, carryHeavyLoad, vehicleWeight);
