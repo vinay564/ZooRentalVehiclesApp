@@ -60,7 +60,7 @@ public class OverLandTrucks extends RentalHeavyVehicles {
     * @return 
     */
     public void consumes(){
-         System.out.println("I takes large amount of fuel when compared to lightvehicles. I takes ");
+         System.out.println("I takes large amount of fuel when compared to lightvehicles. I takes "+);
     } 
     /**
      * using move method
@@ -82,7 +82,7 @@ public class OverLandTrucks extends RentalHeavyVehicles {
      */
     @Override
     public void price() {
-           System.out.println("My price is 80$ per hour in zoo. I very cheap when compared to electric cars");   
+           System.out.println("My price is 80$ per hour in zoo. I am very cheap when compared to electric cars");   
     }
     /**
      * using color() method.
