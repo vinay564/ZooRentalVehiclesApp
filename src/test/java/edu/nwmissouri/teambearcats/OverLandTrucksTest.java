@@ -4,7 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
-import static edu.nwmissouri.teambearcats.HelicopterTest.instance;
+import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,18 +13,18 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test using AirplaneTest using JUnit5
- * @author Satish Vagulapuram
+ *
+ * @author S545147
  */
-public class AirplaneTest {
-           public static Airplane instance;
-
-    public AirplaneTest() {
+public class OverLandTrucksTest {
+      public static OverLandTrucks instance;
+ 
+    public OverLandTrucksTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
-                          instance = new Airplane("FighterPlane","wargoods",1224.2);
+           instance = new OverLandTrucks("OverLandTrucks"," Booking",5.6);
 
     }
     
@@ -41,76 +41,53 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of getDistanceTravelled method, of class Airplane.
+     * Test of getNumOfWheels method, of class OverLandTrucks.
      */
     @Test
-    public void testGetDistanceTravelled() {
-        System.out.println("getDistanceTravelled");
+    public void testGetNumOfWheels() {
+        System.out.println("getNumOfWheels");
         int expResult = 0;
-        int result = instance.getDistanceTravelled();
+        int result = instance.getNumOfWheels();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of setDistanceTravelled method, of class Airplane.
+     * Test of setNumOfWheels method, of class OverLandTrucks.
      */
     @Test
-    public void testSetDistanceTravelled() {
-        System.out.println("setDistanceTravelled");
-        int distanceTravelled = 0;
-        instance.setDistanceTravelled(distanceTravelled);
+    public void testSetNumOfWheels() {
+        System.out.println("setNumOfWheels");
+        int numOfWheels = 0;
+        instance.setNumOfWheels(numOfWheels);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of getTicketPrice method, of class Airplane.
+     * Test of getPrice_dollar method, of class OverLandTrucks.
      */
     @Test
-    public void testGetTicketPrice() {
-        System.out.println("getTicketPrice");
+    public void testGetPrice_dollar() {
+        System.out.println("getPrice_dollar");
         double expResult = 0.0;
-        double result = instance.getTicketPrice();
+        double result = instance.getPrice_dollar();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of setTicketPrice method, of class Airplane.
+     * Test of setPrice_dollar method, of class OverLandTrucks.
      */
     @Test
-    public void testSetTicketPrice() {
-        System.out.println("setTicketPrice");
+    public void testSetPrice_dollar() {
+        System.out.println("setPrice_dollar");
         double ticketPrice = 0.0;
-        instance.setTicketPrice(ticketPrice);
+        instance.setPrice_dollar(ticketPrice);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of getNoOfWings method, of class Airplane.
-     */
-    @Test
-    public void testGetNoOfWings() {
-        System.out.println("getNoOfWings");
-        int expResult = 0;
-        int result = instance.getNoOfWings();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of setNoOfWings method, of class Airplane.
-     */
-    @Test
-    public void testSetNoOfWings() {
-        System.out.println("setNoOfWings");
-        int noOfWings = 0;
-        instance.setNoOfWings(noOfWings);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of toString method, of class Airplane.
+     * Test of toString method, of class OverLandTrucks.
      */
     @Test
     public void testToString() {
@@ -122,7 +99,29 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of move method, of class Airplane.
+     * Test of seatingCapacity method, of class OverLandTrucks.
+     */
+    @Test
+    public void testSeatingCapacity() {
+        System.out.println("seatingCapacity");
+        int expResult = 0;
+        int result = instance.seatingCapacity();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of consumes method, of class OverLandTrucks.
+     */
+    @Test
+    public void testConsumes() {
+        System.out.println("consumes");
+        instance.consumes();
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of move method, of class OverLandTrucks.
      */
     @Test
     public void testMove() {
@@ -132,7 +131,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of capacity method, of class Airplane.
+     * Test of capacity method, of class OverLandTrucks.
      */
     @Test
     public void testCapacity() {
@@ -142,7 +141,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of price method, of class Airplane.
+     * Test of price method, of class OverLandTrucks.
      */
     @Test
     public void testPrice() {
@@ -152,12 +151,12 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of foodMenu method, of class Airplane.
+     * Test of color method, of class OverLandTrucks.
      */
     @Test
-    public void testFoodMenu() {
-        System.out.println("foodMenu");
-        instance.foodMenu();
+    public void testColor() {
+        System.out.println("color");
+        instance.color();
         // TODO review the generated test code and remove the default call to fail.
     }
     

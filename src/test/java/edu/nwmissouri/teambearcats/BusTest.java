@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test class for Bus class
+ * Test class for Bus class using JUnit5
  * @author Vinay Manavarthi
  */
 public class BusTest {
