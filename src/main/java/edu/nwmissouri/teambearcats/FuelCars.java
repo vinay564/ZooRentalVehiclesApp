@@ -11,53 +11,9 @@ package edu.nwmissouri.teambearcats;
  */
 public class FuelCars extends RentalLightVehicles {
 
-    private int numOfWheels = 4;
-    private double price_dollar = 15.75;
-    private boolean IsHavingAirBags = true;
-
-    /*
-      get method for number of wheels
-     */
-    public int getNumOfWheels() {
-        return numOfWheels;
-    }
-
-    /*
-    set method for number of wheels
-     */
-    public void setNumOfWheels(int numOfWheels) {
-        this.numOfWheels = numOfWheels;
-    }
-
-    /*
-    get method for vehicle price
-     */
-    public double getPrice() {
-        return price_dollar;
-    }
-
-    /*
-    set method for vehicle price
-     */
-    public void setPrice(double price) {
-        this.price_dollar = price;
-    }
-
-    public boolean isIsHavingAirBags() {
-        return IsHavingAirBags;
-    }
-
-    public void setIsHavingAirBags(boolean IsHavingAirBags) {
-        this.IsHavingAirBags = IsHavingAirBags;
-    }
-
-    /*
-    toString method for the vehicle class
-     */
-    @Override
-    public String toString() {
-        return "FuelCars{" + "numOfWheels=" + numOfWheels + ", price=" + price_dollar + ", IsHavingAirBags=" + IsHavingAirBags + '}';
-    }
+    private int numOfPassengers;
+    private double numOfMiles;
+    // private boolean IsHavingAirBags;
 
     /**
      * FuelCars Constructor
@@ -67,8 +23,26 @@ public class FuelCars extends RentalLightVehicles {
      * @param numOfPassengers - Passengers number in the car
      * @param numOfMiles - Miles of the car
      */
-    public FuelCars(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+    public FuelCars(String vehicleName, String booking, int numOfPassengers, double numOfMiles) {
         super(vehicleName, booking, numOfPassengers, numOfMiles);
+        this.numOfPassengers = numOfPassengers;
+        this.numOfMiles = numOfMiles;
+    }
+
+    public int getNumOfPassengers() {
+        return numOfPassengers;
+    }
+
+    public void setNumOfPassengers(int numOfPassengers) {
+        this.numOfPassengers = numOfPassengers;
+    }
+
+    public double getNumOfMiles() {
+        return numOfMiles;
+    }
+
+    public void setNumOfMiles(double numOfMiles) {
+        this.numOfMiles = numOfMiles;
     }
 
     /*
@@ -76,7 +50,7 @@ public class FuelCars extends RentalLightVehicles {
      */
     @Override
     public void move() {
-        System.out.println("Fuelcars move in the zoo for the passengers to travel");
+        System.out.println("I have the" + this.numOfPassengers + "move in the zoo for the passengers to travel");
     }
 
     /*
@@ -84,13 +58,30 @@ public class FuelCars extends RentalLightVehicles {
      */
     @Override
     public void speed() {
-        System.out.println("The fuelcars mantains the average speed of the fuelcars ");
+        System.out.println("I have travel with the " + this.numOfMiles + "to travel by giving certain milage");
     }
-       
+
     /*
      carModel() -  has different carddmodels
-    */
+     */
     public void carModel() {
         System.out.println("The fuelcars has provides so many car models");
+    }
+
+    public static void main(String[] args) {
+
+        FuelCars fuel_Obj = new FuelCars("Audio", "Offline Booking", 6, 79.19);
+
+        fuel_Obj.move();
+        fuel_Obj.speed();
+
+    }
+
+    /*
+    toString method for the vehicle class
+     */
+    @Override
+    public String toString() {
+        return "FuelCars{" + "numOfPassengers=" + numOfPassengers + ", numOfMiles=" + numOfMiles + '}';
     }
 }
