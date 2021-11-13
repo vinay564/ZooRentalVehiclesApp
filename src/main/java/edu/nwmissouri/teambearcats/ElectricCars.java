@@ -11,41 +11,9 @@ package edu.nwmissouri.teambearcats;
  */
 public class ElectricCars extends RentalLightVehicles {
 
-    private int numOfWheels = 4;
-    private double price_dollar = 25.70;
-    private double mile = 15.40;
-
-    public int getNumOfWheels() {
-        return numOfWheels;
-    }
-
-    public void setNumOfWheels(int numOfWheels) {
-        this.numOfWheels = numOfWheels;
-    }
-
-    public double getPrice() {
-        return price_dollar;
-    }
-
-    public void setPrice(double price) {
-        this.price_dollar = price;
-    }
-
-    public double getMile() {
-        return mile;
-    }
-
-    public void setMile(double mile) {
-        this.mile = mile;
-    }
-
-    /*
-    toString method for the fuelcars vehicle class
-     */
-    @Override
-    public String toString() {
-        return "ElectricCars{" + "numOfWheels=" + numOfWheels + ", price=" + price_dollar + ", mile=" + mile + '}';
-    }
+    private String vehicleName;
+    private int numOfPassengers;
+    //  private double mile;
 
     /**
      * Electric Cars constructor
@@ -57,27 +25,58 @@ public class ElectricCars extends RentalLightVehicles {
      */
     public ElectricCars(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
         super(vehicleName, booking, numOfPassengers, numOfMiles);
+        this.vehicleName = vehicleName;
+        this.numOfPassengers = numOfPassengers;
     }
 
-    /*
-    move method definest the vehicle move type
-     */
-    @Override
-    public void move() {
-        System.out.println("The Electric car which is available in the Zoo can move in differe climatic conditions of zoo");
+    public String getVehicleName() {
+        return vehicleName;
     }
 
-    /*
-    speed method defines the vehicle speed type
-     */
-    @Override
-    public void speed() {
-        System.out.println("In the Zoo the electric car can travel with a certain speed which is for the suitable to the zoo situations");
+    public void setVehicleName(String vehicleName) {
+        this.vehicleName = vehicleName;
     }
+
+    public int getNumOfPassengers() {
+        return numOfPassengers;
+    }
+
+    public void setNumOfPassengers(int numOfPassengers) {
+        this.numOfPassengers = numOfPassengers;
+    }
+
     /*
     safetyMeasures() cars provides safety measures
-    */
+     */
     public void safetyMeasures() {
         System.out.println("Electric cars has more safety by provding airbags");
     }
+
+    @Override
+    public void move() {
+        System.out.println("I have " + this.vehicleName + " to move");
+    }
+
+    @Override
+    public void speed() {
+        System.out.println("This Electric car travels with good amount of speed by giving a good milage ");
+    }
+
+    public static void main(String[] args) {
+
+        ElectricCars elec_Obj = new ElectricCars("Telsa", "Online Bookin", 5, 43.343);
+
+        elec_Obj.move();
+        elec_Obj.speed();
+
+    }
+
+    /*
+    toString method for the fuelcars vehicle class
+     */
+    @Override
+    public String toString() {
+        return "ElectricCars{" + "vehicleName=" + vehicleName + ", numOfPassengers=" + numOfPassengers + '}';
+    }
+
 }

@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
+//import static edu.nwmissouri.teambearcats.FuelCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,15 +17,13 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Nikhil Porika
  */
 public class ElectricCarsTest {
-    
-   public static ElectricCars instance;
+     public static ElectricCars instance;
     public ElectricCarsTest() {
     }
     
     @BeforeAll
     public static void setUpClass() {
-          instance = new ElectricCars("audi","Online Booking",4,5.6);
-  
+        instance = new ElectricCars("Telsa","Online Booking",4,5.6);
     }
     
     @AfterAll
@@ -40,113 +39,49 @@ public class ElectricCarsTest {
     }
 
     /**
-     * Test of getNumOfWheels method, of class ElectricCars.
+     * Test of getVehicleName method, of class ElectricCars.
      */
     @Test
-    public void testGetNumOfWheels() {
-        System.out.println("getNumOfWheels");
-        int expResult = 0;
-        int result = instance.getNumOfWheels();
+    public void testGetVehicleName() {
+        System.out.println("getVehicleName");
+        String expResult = "";
+        String result = instance.getVehicleName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setNumOfWheels method, of class ElectricCars.
+     * Test of setVehicleName method, of class ElectricCars.
      */
     @Test
-    public void testSetNumOfWheels() {
-        System.out.println("setNumOfWheels");
-        int numOfWheels = 0;
-        instance.setNumOfWheels(numOfWheels);
+    public void testSetVehicleName() {
+        System.out.println("setVehicleName");
+        String vehicleName = "";
+        instance.setVehicleName(vehicleName);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getPrice method, of class ElectricCars.
+     * Test of getNumOfPassengers method, of class ElectricCars.
      */
     @Test
-    public void testGetPrice() {
-        System.out.println("getPrice");
-        double expResult = 25.7;
-        double result = instance.getPrice();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setPrice method, of class ElectricCars.
-     */
-    @Test
-    public void testSetPrice() {
-        System.out.println("setPrice");
-        double price = 0.0;
-        instance.setPrice(price);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getMile method, of class ElectricCars.
-     */
-    @Test
-    public void testGetMile() {
-        System.out.println("getMile");
-        double expResult = 15.4;
-        double result = instance.getMile();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setMile method, of class ElectricCars.
-     */
-    @Test
-    public void testSetMile() {
-        System.out.println("setMile");
-        double mile = 0.0;
-        instance.setMile(mile);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class ElectricCars.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        String expResult = "ElectricCars{numOfWheels=0, price=25.7, mile=15.4}";
-        String result = instance.toString();
+    public void testGetNumOfPassengers() {
+        System.out.println("getNumOfPassengers");
+        int expResult = 4;
+        int result = instance.getNumOfPassengers();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of move method, of class ElectricCars.
+     * Test of setNumOfPassengers method, of class ElectricCars.
      */
     @Test
-    public void testMove() {
-        System.out.println("move");
-        instance.move();
+    public void testSetNumOfPassengers() {
+        System.out.println("setNumOfPassengers");
+        int numOfPassengers = 0;
+        instance.setNumOfPassengers(numOfPassengers);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of speed method, of class ElectricCars.
-     */
-    @Test
-    public void testSpeed() {
-        System.out.println("speed");
-        instance.speed();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
 
     /**
@@ -157,7 +92,49 @@ public class ElectricCarsTest {
         System.out.println("safetyMeasures");
         instance.safetyMeasures();
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of move method, of class ElectricCars.
+     */
+    @Test
+    public void testMove() {
+        System.out.println("move");
+        instance.move();
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of speed method, of class ElectricCars.
+     */
+    @Test
+    public void testSpeed() {
+        System.out.println("speed");
+        instance.speed();
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of main method, of class ElectricCars.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        ElectricCars.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of toString method, of class ElectricCars.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "audi";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
     }
     
 }
