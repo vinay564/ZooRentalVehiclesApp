@@ -14,6 +14,60 @@ private double ticketprice=45.75;
 private double distanceTravelled=75.44;
 private int numOfPassengers = 6;
 
+    /**
+     * used constructor for SpeedBoat
+     * @param vehicleName
+     * @param booking
+     * @param numOfPassengers
+     * @param numOfMiles 
+     */
+    public SpeedBoat(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+        super(vehicleName, booking, numOfPassengers, numOfMiles);
+        this.ticketprice = ticketprice;
+        this.distanceTravelled = distanceTravelled;
+        this.numOfPassengers = numOfPassengers;
+    }
+    
+    /**
+     * getter is used forTicketPrice
+     * @return 
+     */
+    public double getTicketprice() {
+        return ticketprice;
+    }
+    
+    /**
+     * setter is used TicketPrice
+     * @param ticketprice 
+     */
+    public void setTicketprice(double ticketprice) {
+        this.ticketprice = ticketprice;
+    }
+    
+    /**
+     * getter is used for DistanceTravelled
+     * @return 
+     */
+    public double getDistanceTravelled() {
+        return distanceTravelled;
+    }
+    
+    /**
+     * setter is used for DistanceTravelled
+     * @param distanceTravelled 
+     */
+    public void setDistanceTravelled(double distanceTravelled) {
+        this.distanceTravelled = distanceTravelled;
+    }
+    
+    public int getNumOfPassengers() {
+        return numOfPassengers;
+    }
+    
+    public void setNumOfPassengers(int numOfPassengers) {
+        this.numOfPassengers = numOfPassengers;
+    }
+
      /**
      * move() - general method for vehicle movement
      */
@@ -35,56 +89,12 @@ private int numOfPassengers = 6;
     public void NumberOfSeats(){
         System.out.println("number of seats in a jetboat.");
     }
-
-    /**
-     * getter is used forTicketPrice
-     * @return 
-     */
-    public double getTicketprice() {
-        return ticketprice;
-    }
-
-    /**
-     * setter is used TicketPrice
-     * @param ticketprice 
-     */
-    public void setTicketprice(double ticketprice) {
-        this.ticketprice = ticketprice;
-    }
-
-    /**
-     * getter is used for DistanceTravelled
-     * @return 
-     */
-    public double getDistanceTravelled() {
-        return distanceTravelled;
-    }
-
-    /**
-     * setter is used for DistanceTravelled
-     * @param distanceTravelled 
-     */
-    public void setDistanceTravelled(double distanceTravelled) {
-        this.distanceTravelled = distanceTravelled;
-    }
-
-    public int getNumOfPassengers() {
-        return numOfPassengers;
-    }
-
-    public void setNumOfPassengers(int numOfPassengers) {
-        this.numOfPassengers = numOfPassengers;
-    }
     
-    /**
-     * used constructor for SpeedBoat
-     * @param vehicleName
-     * @param booking
-     * @param numOfPassengers
-     * @param numOfMiles 
-     */
-    public SpeedBoat(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
-        super(vehicleName, booking, numOfPassengers, numOfMiles);
+    public static void main(String[] args){
+        SpeedBoat speedboatObj = new SpeedBoat("Speedboat", "Yes",6,75.44);
+        speedboatObj.move();
+        speedboatObj.speed();
+        speedboatObj.NumberOfSeats();
     }
 
     @Override
