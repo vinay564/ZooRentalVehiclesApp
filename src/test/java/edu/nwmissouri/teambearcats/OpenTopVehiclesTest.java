@@ -4,7 +4,6 @@
  */
 package edu.nwmissouri.teambearcats;
 
-import static edu.nwmissouri.teambearcats.OverLandTrucksTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,30 +12,28 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @author S545147
+ * Test using OpenTopVehicles using JUnit5
+ * @author Vinay Manavarthi
  */
 public class OpenTopVehiclesTest {
-
-    public static OpenTopVehicles instance;
-
+    
     public OpenTopVehiclesTest() {
     }
-
+        public static OpenTopVehicles instance;
+    
     @BeforeAll
-    public static void setUpClass() {
-        instance = new OpenTopVehicles("audi", "Online Booking", 8, 5.6);
-
+    public static void setUpClass() {      
+        instance = new OpenTopVehicles(2,4.5,"OpenTopVehicle","Online Booking",1,2.3);
     }
-
+    
     @AfterAll
     public static void tearDownClass() {
     }
-
+    
     @BeforeEach
     public void setUp() {
     }
-
+    
     @AfterEach
     public void tearDown() {
     }
@@ -47,10 +44,12 @@ public class OpenTopVehiclesTest {
     @Test
     public void testGetNumOfWheels() {
         System.out.println("getNumOfWheels");
+      
         int expResult = 0;
         int result = instance.getNumOfWheels();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
+   
     }
 
     /**
@@ -60,53 +59,33 @@ public class OpenTopVehiclesTest {
     public void testSetNumOfWheels() {
         System.out.println("setNumOfWheels");
         int numOfWheels = 0;
+        
         instance.setNumOfWheels(numOfWheels);
         // TODO review the generated test code and remove the default call to fail.
+        
     }
 
     /**
-     * Test of getPrice method, of class OpenTopVehicles.
+     * Test of getPriceIn_dollars method, of class OpenTopVehicles.
      */
     @Test
-    public void testGetPrice() {
-        System.out.println("getPrice");
+    public void testGetPriceIn_dollars() {
+        System.out.println("getPriceIn_dollars");
+      
         double expResult = 0.0;
-        double result = instance.getPrice();
+        double result = instance.getPriceIn_dollars();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of setPrice method, of class OpenTopVehicles.
+     * Test of setPriceIn_dollars method, of class OpenTopVehicles.
      */
     @Test
-    public void testSetPrice() {
-        System.out.println("setPrice");
-        double price = 0.0;
-        instance.setPrice(price);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of getMile method, of class OpenTopVehicles.
-     */
-    @Test
-    public void testGetMile() {
-        System.out.println("getMile");
-        double expResult = 0.0;
-        double result = instance.getMile();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of setMile method, of class OpenTopVehicles.
-     */
-    @Test
-    public void testSetMile() {
-        System.out.println("setMile");
-        double mile = 0.0;
-        instance.setMile(mile);
+    public void testSetPriceIn_dollars() {
+        System.out.println("setPriceIn_dollars");
+        double priceIn_dollars = 0.0;
+        instance.setPriceIn_dollars(priceIn_dollars);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -142,4 +121,14 @@ public class OpenTopVehiclesTest {
         // TODO review the generated test code and remove the default call to fail.
     }
 
+    /**
+     * Test of color method, of class OpenTopVehicles.
+     */
+    @Test
+    public void testColor() {
+        System.out.println("color");
+        instance.color();
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    
 }

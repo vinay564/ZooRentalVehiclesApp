@@ -4,7 +4,7 @@
  */
 package edu.nwmissouri.teambearcats;
 
-import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
+import static edu.nwmissouri.teambearcats.BicycleTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,19 +13,20 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @author S545147
+ * Test using OverLandTrucks using JUnit5
+ * @author Pranay Bhargav Reddy Bakaram (S545147)
  */
 public class OverLandTrucksTest {
-      public static OverLandTrucks instance;
- 
+    
     public OverLandTrucksTest() {
     }
     
+     public static OverLandTrucks instance;
+    
     @BeforeAll
-    public static void setUpClass() {
-           instance = new OverLandTrucks("OverLandTrucks"," Booking",5.6);
-
+    public static void setUpClass() {     
+                instance = new OverLandTrucks(8,4.5,"Volvo","Carrying heavy load",4.6);
+     
     }
     
     @AfterAll
@@ -46,10 +47,10 @@ public class OverLandTrucksTest {
     @Test
     public void testGetNumOfWheels() {
         System.out.println("getNumOfWheels");
+     
         int expResult = 0;
         int result = instance.getNumOfWheels();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -64,25 +65,26 @@ public class OverLandTrucksTest {
     }
 
     /**
-     * Test of getPrice_dollar method, of class OverLandTrucks.
+     * Test of getTicketPrice method, of class OverLandTrucks.
      */
     @Test
-    public void testGetPrice_dollar() {
-        System.out.println("getPrice_dollar");
+    public void testGetTicketPrice() {
+        System.out.println("getTicketPrice");
         double expResult = 0.0;
-        double result = instance.getPrice_dollar();
+        double result = instance.getTicketPrice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
+    
     }
 
     /**
-     * Test of setPrice_dollar method, of class OverLandTrucks.
+     * Test of setTicketPrice method, of class OverLandTrucks.
      */
     @Test
-    public void testSetPrice_dollar() {
-        System.out.println("setPrice_dollar");
+    public void testSetTicketPrice() {
+        System.out.println("setTicketPrice");
         double ticketPrice = 0.0;
-        instance.setPrice_dollar(ticketPrice);
+        instance.setTicketPrice(ticketPrice);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -116,8 +118,10 @@ public class OverLandTrucksTest {
     @Test
     public void testConsumes() {
         System.out.println("consumes");
+      
         instance.consumes();
         // TODO review the generated test code and remove the default call to fail.
+      
     }
 
     /**
@@ -126,8 +130,10 @@ public class OverLandTrucksTest {
     @Test
     public void testMove() {
         System.out.println("move");
+      
         instance.move();
         // TODO review the generated test code and remove the default call to fail.
+       
     }
 
     /**
@@ -146,18 +152,10 @@ public class OverLandTrucksTest {
     @Test
     public void testPrice() {
         System.out.println("price");
+  
         instance.price();
         // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of color method, of class OverLandTrucks.
-     */
-    @Test
-    public void testColor() {
-        System.out.println("color");
-        instance.color();
-        // TODO review the generated test code and remove the default call to fail.
+     
     }
     
 }
