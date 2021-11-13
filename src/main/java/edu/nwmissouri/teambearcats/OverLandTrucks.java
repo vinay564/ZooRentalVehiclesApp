@@ -5,14 +5,28 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- * OverLandTrucks class (derived subclass of the superclass RentalHeavyvehicles)
- * @author s545147(Pranay Bhargav reddy Bakaram)
+ * OverLandtrucks class (derived subclass of the superclass RentalHeavyVehicles)
+ *
+ * @author Pranay Bhargav reddy Bakaram (S545147)
+ *
  */
-
 public class OverLandTrucks extends RentalHeavyVehicles {
-        
-      private int numOfWheels =8 ;
-      private double Price_dollar = 25.0 ;
+
+    private int numOfWheels;
+    private double ticketPrice_dollars;
+
+    /**
+     * OverLandTrucks Constructor
+     *
+     * @param vehicleName - This is the vehicle name of the BUS
+     * @param carryHeavyLoad - Bus carries the heavy load
+     * @param vehicleWeight - This is vehicle weight
+     */
+    public OverLandTrucks(int numOfWheels, double ticketPrice_dollars, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        super(vehicleName, carryHeavyLoad, vehicleWeight);
+        this.numOfWheels = numOfWheels;
+        this.ticketPrice_dollars = ticketPrice_dollars;
+    }
 
     public int getNumOfWheels() {
         return numOfWheels;
@@ -22,72 +36,71 @@ public class OverLandTrucks extends RentalHeavyVehicles {
         this.numOfWheels = numOfWheels;
     }
 
-    public double getPrice_dollar() {
-        return Price_dollar;
+    public double getTicketPrice() {
+        return ticketPrice_dollars;
     }
 
-    public void setPrice_dollar(double ticketPrice) {
-        this.Price_dollar = Price_dollar;
+    public void setTicketPrice(double ticketPrice_dollars) {
+        this.ticketPrice_dollars = ticketPrice_dollars;
     }
 
+
+    /**
+     * return seatingCapacity
+     *
+     * @return
+     */
+    public int seatingCapacity() {
+        return 1;
+    }
+
+    //consumes method.
+    public void consumes() {
+        System.out.println("I consume more "+FuelType.DIESEL);
+    }
+    /*
+    overriding move method
+    */
     @Override
-    public String toString() {
-        return "OverLandTrucks{" + "numOfWheels=" + numOfWheels + ", ticketPrice=" + Price_dollar + '}';
+    public void move() {
+        System.out.println("I Have "+ this.numOfWheels + " wheels to move");
+
     }
-    /**
-     * OverLandTrucks Constructor
-     * 
-     * @param vehicleName - This is the vehicle name of the BUS
-     * @param carryHeavyLoad - Bus carries the heavy load
-     * @param vehicleWeight - This is vehicle weight
-     */
-    public OverLandTrucks(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-        super(vehicleName, carryHeavyLoad, vehicleWeight);
-    }
-      
-      
-    
-   /**
-    * return seatingCapacity
-    * @return 
+    /*
+    overriding capacity method
     */
-      public int seatingCapacity(){
-          return 10;
-    }
-    
-       /**
-    * return consumes fuel Type
-    * @return 
-    */
-    public void consumes(){
-         System.out.println("I takes large amount of fuel when compared to lightvehicles. I takes "+FuelType.PETROL);
-    } 
-    /**
-     * using move method
-     */
-      @Override
-    public void move(){
-     System.out.println("I move on road and Carries heavy load");
-      
-    }
-    /**
-     * using capacity method
-     */
     @Override
     public void capacity() {
-    System.out.println("My capacity is 10 ");    
+        System.out.println("I Carries Heavy Load");
     }
-    /**
-     * using price method
-     */
+    /*
+    overriding price method.
+    */
     @Override
     public void price() {
-           System.out.println("My price is 80$ per hour in zoo. I am very cheap when compared to electric cars");   
+        System.out.println("My Ticket Price is $" +this.ticketPrice_dollars );
+    }
+    
+    
+
+    public static void main(String[] args) {
+
+        OverLandTrucks Obj = new OverLandTrucks(8,4.5,"BMW", "IM carrying Heavy load", 5000.00);
+
+        Obj.capacity();
+        Obj.consumes();
+        Obj.price();
+        Obj.move();
+
     }
     /**
-     * using color() method.
+     * return String
+     * @return 
      */
-    public void color(){
-        System.out.println("The color of the truck is "+VehicleColor.BROWN);
+    
+    @Override
+    public String toString() {
+        return "OverLandTrucks{" + "numOfWheels=" + numOfWheels + ", ticketPrice=" + ticketPrice_dollars + "}";
     }
+
 }
