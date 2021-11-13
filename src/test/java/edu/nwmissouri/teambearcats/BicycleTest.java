@@ -23,7 +23,7 @@ public class BicycleTest {
     
     @BeforeAll
     public static void setUpClass() {      
-        instance = new Bicycle("Hero","Online Booking",4,5.6);
+        instance = new Bicycle(2,4.5,"Bicycle","Online Booking",1,2.3);
     }
     
     @AfterAll

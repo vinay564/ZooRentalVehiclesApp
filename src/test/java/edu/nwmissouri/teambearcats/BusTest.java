@@ -25,7 +25,7 @@ public class BusTest {
     
     @BeforeAll
     public static void setUpClass() {     
-                instance = new Bus("Volvo","Carrying heavy load",4.6);
+                instance = new Bus(8,4.5,"Volvo","Carrying heavy load",4.6);
      
     }
     
