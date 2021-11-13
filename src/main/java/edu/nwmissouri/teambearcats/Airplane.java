@@ -20,16 +20,15 @@ public class Airplane extends RentalHeavyVehicles {
 
     /**
      * Constructor
+     *
      * @param distanceTravelled_miles
      * @param ticketPrice_dollars
      * @param noOfWings
      * @param vehicleName
      * @param carryHeavyLoad
-     * @param vehicleWeight 
+     * @param vehicleWeight
      */
-    
-    
-     public Airplane(int distanceTravelled_miles, double ticketPrice_dollars, int noOfWings, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+    public Airplane(int distanceTravelled_miles, double ticketPrice_dollars, int noOfWings, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
         super(vehicleName, carryHeavyLoad, vehicleWeight);
         this.distanceTravelled_miles = distanceTravelled_miles;
         this.ticketPrice_dollars = ticketPrice_dollars;
@@ -86,7 +85,6 @@ public class Airplane extends RentalHeavyVehicles {
      *
      * @param noOfWings
      */
-
     public void setNoOfWings(int noOfWings) {
         this.noOfWings = noOfWings;
     }
@@ -96,7 +94,7 @@ public class Airplane extends RentalHeavyVehicles {
      */
     @Override
     public void move() {
-        System.out.println("I  have "+noOfWings+ " wheels to move on air");
+        System.out.println("I  have " + noOfWings + " wheels to move on air");
     }
 
     /**
@@ -112,7 +110,7 @@ public class Airplane extends RentalHeavyVehicles {
      */
     @Override
     public void price() {
-        System.out.println("My Ticket Price is $" +this.ticketPrice_dollars );
+        System.out.println("My Ticket Price is $" + this.ticketPrice_dollars);
     }
 
     /**
@@ -124,13 +122,12 @@ public class Airplane extends RentalHeavyVehicles {
 
     public static void main(String[] args) {
 
-        Airplane airplaneObj = new Airplane(2, 3.3, 3,"airplane", "Yes", 3.4);
+        Airplane airplaneObj = new Airplane(2, 3.3, 3, "airplane", "Yes", 3.4);
 
         airplaneObj.move();
         airplaneObj.capacity();
         airplaneObj.price();
         airplaneObj.foodMenu();
-        
 
     }
 
