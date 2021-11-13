@@ -5,14 +5,31 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *OpenTopVehicles class (derived subclass of the superclass RentalLightvehicles)
- * 
- * @author Pranay Bhargav Reddy Bakaram (s545147)
+ * OpenTopVehicles class (derived subclass of the superclass RentalLightVehicles)
+ *
+ * @author Pranay Bhargav Reddy Bakaram (S545147)
  */
 public class OpenTopVehicles extends RentalLightVehicles {
-    private int numOfWheels = 4;
-    private double price=0.0;
-    private double mile=0.0;
+
+    private int numOfWheels ;
+    private double priceIn_dollars ;
+
+    /**
+     * OpenTopVehicles Constructor
+     *
+     * @param numOfWheels - This is the number of wheels for bicycles
+     * @param priceIn_dollars - Bus carries the heavy load
+     * @param vehicleName - This is vehicleName
+     * * @param booking - This is for ticket booking
+     * * @param numOfPassengers - This is numOfPassengers in the bus
+     */
+    public OpenTopVehicles(int numOfWheels, double priceIn_dollars, String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+        super(vehicleName, booking, numOfPassengers, numOfMiles);
+        this.numOfWheels = numOfWheels;
+        this.priceIn_dollars = priceIn_dollars;
+    }
+
+   
 
     public int getNumOfWheels() {
         return numOfWheels;
@@ -22,51 +39,52 @@ public class OpenTopVehicles extends RentalLightVehicles {
         this.numOfWheels = numOfWheels;
     }
 
-    public double getPrice() {
-        return price;
+    public double getPriceIn_dollars() {
+        return priceIn_dollars;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPriceIn_dollars(double priceIn_dollars) {
+        this.priceIn_dollars = priceIn_dollars;
+    }
+    
+     /**
+     * The move method
+     */
+    @Override
+    public void move() {
+        System.out.println("I  have "+numOfWheels+ " wheels to move on road");
     }
 
-    public double getMile() {
-        return mile;
+    /**
+     * The speed method
+     */
+
+    @Override
+    public void speed() {
+        System.out.println("My cost is $"+priceIn_dollars);
     }
 
-    public void setMile(double mile) {
-        this.mile = mile;
+    /**
+     * The color method.
+     *
+     */
+    public void color() {
+        System.out.println("The color of the vehicle is "+VehicleColor.SILVER);
+    }
+
+    public static void main(String[] args) {
+
+        OpenTopVehicles Obj = new OpenTopVehicles(4,10.3,"OpenTopVehicle","Yes",1,3.4);
+       
+        Obj.color();
+        Obj.move();
+        Obj.speed();
+     
     }
 
     @Override
     public String toString() {
-        return "OpenTopVechiles{" + "numOfWheels=" + numOfWheels + ", price=" + price + ", mile=" + mile + '}';
+        return "OpenTopVehicles{" + "numOfWheels=" + numOfWheels + ", priceIn_dollars=" + priceIn_dollars + '}';
     }
 
-    /**
-     * OpenTopVehicles constructor
-     * @param vehicleName - The Name of the vehicle
-     * @param booking -  The Different booking systems
-     * @param numOfPassengers - Number of Passengers who travel
-     * @param numOfMiles - Number of Miles car travels
-     */
-    public OpenTopVehicles(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
-        super(vehicleName, booking, numOfPassengers, numOfMiles);
-    }
-   /**
-    * using move() method.
-    */
-    @Override
-    public void move() {
-        System.out.println("The OpenTopvehicles which is available in the Zoo moves on road. By using them visitors can enjoy the natural air ");
-    }
-    /*
-    using Speed() method.
-    */
-    @Override
-    public void speed() {
-        System.out.println("The Top speed of the OpenTopvechiles is 240kmph");
-    }
-    
-    
-    }
+}
