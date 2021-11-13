@@ -11,40 +11,30 @@ package edu.nwmissouri.teambearcats;
  */
 public class Train extends RentalHeavyVehicles {
 
-    private double distanceTravelled_miles = 12.24;
-    private int numOfCoaches = 12;
-    private double ticketPrice_dollar = 15.55;
+    private double distanceTravelled_miles;
+    private int numOfCoaches;
+    private double ticketPrice_dollar;
 
     /**
-     * move() - general method for vehicle movement
+     * train constructor
+     *
+     * @param vehicleName is determines the train
+     * @param carryHeavyLoad it can carry many goods
+     * @param vehicleWeight it is Heavy Vehicles
      */
-    @Override
-    public void move() {
-        System.out.println("Vehicle moves on different platforms");
+    public Train(double distanceTravelled_miles, int numOfCoaches, double ticketPrice_dollar, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        super(vehicleName, carryHeavyLoad, vehicleWeight);
+        this.distanceTravelled_miles = distanceTravelled_miles;
+        this.numOfCoaches = numOfCoaches;
+        this.ticketPrice_dollar = ticketPrice_dollar;
     }
 
-    /**
-     * capacity() - general method for vehicle capacity
-     */
-    @Override
-    public void capacity() {
-        System.out.println("Vehicle passenger capacity");
-    }
-
-    /**
-     * price() - general method for vehicle price
-     */
-    @Override
-    public void price() {
-        System.out.println("Price of the Vehicle ");
-    }
-
-    public double getDistanceTravelled() {
+    public double getDistanceTravelled_miles() {
         return distanceTravelled_miles;
     }
 
-    public void setDistanceTravelled(double distanceTravelled) {
-        this.distanceTravelled_miles = distanceTravelled;
+    public void setDistanceTravelled_miles(double distanceTravelled_miles) {
+        this.distanceTravelled_miles = distanceTravelled_miles;
     }
 
     public int getNumOfCoaches() {
@@ -64,24 +54,48 @@ public class Train extends RentalHeavyVehicles {
     }
 
     /**
-     * tostring of train
-     *
-     * @return
+     * move() - general method for vehicle movement
      */
     @Override
-    public String toString() {
-        return "Train{" + "distanceTravelled=" + distanceTravelled_miles + ", numOfCoaches=" + numOfCoaches + ", ticketPrice=" + ticketPrice_dollar + '}';
+    public void move() {
+        System.out.println("I  have travelled " + distanceTravelled_miles);
     }
 
     /**
-     * train constructor
-     *
-     * @param vehicleName is determines the train
-     * @param carryHeavyLoad it can carry many goods 
-     * @param vehicleWeight it is Heavy Vehicles
+     * capacity() - general method for vehicle capacity
      */
-    public Train(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-        super(vehicleName, carryHeavyLoad, vehicleWeight);
+    @Override
+    public void capacity() {
+        System.out.println("I have capacity of " + numOfCoaches);
+    }
+
+    /**
+     * price() - general method for vehicle price
+     */
+    @Override
+    public void price() {
+        System.out.println("My cost is " + ticketPrice_dollar);
+    }
+
+    public static void main(String[] args) {
+
+        Train trainObj = new Train(2.4, 5, 3.9, "train", "Yes", 2.3);
+
+        trainObj.move();
+        trainObj.capacity();
+        trainObj.price();
+
+    }
+
+    /**
+     * toString of train
+     *
+     * @return
+     */
+
+    @Override
+    public String toString() {
+        return "Train{" + "distanceTravelled_miles=" + distanceTravelled_miles + ", numOfCoaches=" + numOfCoaches + ", ticketPrice_dollar=" + ticketPrice_dollar + '}';
     }
 
 }
