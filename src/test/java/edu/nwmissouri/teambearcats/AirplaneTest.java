@@ -24,7 +24,7 @@ public class AirplaneTest {
     
     @BeforeAll
     public static void setUpClass() {
-                          instance = new Airplane("FighterPlane","wargoods",1224.2);
+                          instance = new Airplane(2, 3.3, 3,"airplane", "Yes", 3.4);
 
     }
     
@@ -47,7 +47,7 @@ public class AirplaneTest {
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
         int expResult = 0;
-        int result = instance.getDistanceTravelled();
+        int result = instance.getDistanceTravelled_miles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
@@ -59,7 +59,7 @@ public class AirplaneTest {
     public void testSetDistanceTravelled() {
         System.out.println("setDistanceTravelled");
         int distanceTravelled = 0;
-        instance.setDistanceTravelled(distanceTravelled);
+        instance.setDistanceTravelled_miles(distanceTravelled);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -70,7 +70,7 @@ public class AirplaneTest {
     public void testGetTicketPrice() {
         System.out.println("getTicketPrice");
         double expResult = 0.0;
-        double result = instance.getTicketPrice();
+        double result = instance.getTicketPrice_dollars();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
@@ -82,7 +82,7 @@ public class AirplaneTest {
     public void testSetTicketPrice() {
         System.out.println("setTicketPrice");
         double ticketPrice = 0.0;
-        instance.setTicketPrice(ticketPrice);
+        instance.setTicketPrice_dollars(ticketPrice);
         // TODO review the generated test code and remove the default call to fail.
     }
 
