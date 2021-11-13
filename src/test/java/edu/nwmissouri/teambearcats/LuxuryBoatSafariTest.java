@@ -14,28 +14,30 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test using LuxuryBoatSafariTest using JUnit5
- *  @author Sai Kaushik Beeram
+ *
+ * @author Sai Kaushik Beeram
  */
 public class LuxuryBoatSafariTest {
-               public static LuxuryBoatSafari instance;
+
+    public static LuxuryBoatSafari instance;
 
     public LuxuryBoatSafariTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
-                                  instance = new LuxuryBoatSafari("FighterPlane","wargoods",1224.2);
+        instance = new LuxuryBoatSafari(2.4, 5, 3.9, "LuxuryBoatSafari", "Yes", 2.3);
 
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
@@ -150,5 +152,5 @@ public class LuxuryBoatSafariTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
-    
+
 }

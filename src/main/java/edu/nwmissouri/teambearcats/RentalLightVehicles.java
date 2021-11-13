@@ -19,9 +19,9 @@ public abstract class RentalLightVehicles {
     protected String vehicleName = "Light Vehicles";
     protected String booking = "Number of seats";
     protected int numOfPassengers = 6;
-    protected Double numOfMiles = 1200.50;
+    protected double numOfMiles = 1200.50;
 
-    public RentalLightVehicles(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
+    public RentalLightVehicles(String vehicleName, String booking, int numOfPassengers, double numOfMiles) {
         this.vehicleName = vehicleName;
         this.booking = booking;
         this.numOfPassengers = numOfPassengers;
@@ -50,7 +50,7 @@ public abstract class RentalLightVehicles {
         return numOfPassengers;
     }
 
-    public Double getNumOfMiles() {
+    public double getNumOfMiles() {
         return numOfMiles;
     }
 

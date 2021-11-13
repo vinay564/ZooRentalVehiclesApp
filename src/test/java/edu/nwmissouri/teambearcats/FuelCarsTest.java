@@ -13,112 +13,78 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test using FuelCars using JUnit5
+ * Test using ElectricCars using JUnit5
+ *
  * @author Nikhil Porika
  */
 public class FuelCarsTest {
-       public static FuelCars instance;
+
+    public static FuelCars instance;
 
     public FuelCarsTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
-         instance = new FuelCars("audi","Online Booking",4,5.6);
+        instance = new FuelCars("audi", "Offline Booking", 6, 65.6);
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
 
     /**
-     * Test of getNumOfWheels method, of class FuelCars.
+     * Test of getNumOfPassengers method, of class FuelCars.
      */
     @Test
-    public void testGetNumOfWheels() {
-        System.out.println("getNumOfWheels");
-        int expResult = 0;
-        int result = instance.getNumOfWheels();
+    public void testGetNumOfPassengers() {
+        System.out.println("getNumOfPassengers");
+        int expResult = 6;
+        int result = instance.getNumOfPassengers();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of setNumOfWheels method, of class FuelCars.
+     * Test of setNumOfPassengers method, of class FuelCars.
      */
     @Test
-    public void testSetNumOfWheels() {
-        System.out.println("setNumOfWheels");
-        int numOfWheels = 0;
-        instance.setNumOfWheels(numOfWheels);
+    public void testSetNumOfPassengers() {
+        System.out.println("setNumOfPassengers");
+        int numOfPassengers = 0;
+        instance.setNumOfPassengers(numOfPassengers);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of getPrice method, of class FuelCars.
+     * Test of getNumOfMiles method, of class FuelCars.
      */
     @Test
-    public void testGetPrice() {
-        System.out.println("getPrice");
-         double expResult = 15.75;
-        double result = instance.getPrice();
+    public void testGetNumOfMiles() {
+        System.out.println("getNumOfMiles");
+        double expResult = 0.0;
+        double result = instance.getNumOfMiles();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of setPrice method, of class FuelCars.
+     * Test of setNumOfMiles method, of class FuelCars.
      */
     @Test
-    public void testSetPrice() {
-        System.out.println("setPrice");
-        double price = 0.0;
-        instance.setPrice(price);
+    public void testSetNumOfMiles() {
+        System.out.println("setNumOfMiles");
+        double numOfMiles = 0.0;
+        instance.setNumOfMiles(numOfMiles);
         // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of isIsHavingAirBags method, of class FuelCars.
-     */
-    @Test
-    public void testIsIsHavingAirBags() {
-        System.out.println("isIsHavingAirBags");
-        boolean expResult = false;
-        boolean result = instance.isIsHavingAirBags();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of setIsHavingAirBags method, of class FuelCars.
-     */
-    @Test
-    public void testSetIsHavingAirBags() {
-        System.out.println("setIsHavingAirBags");
-        boolean IsHavingAirBags = false;
-        instance.setIsHavingAirBags(IsHavingAirBags);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of toString method, of class FuelCars.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        String expResult = "FuelCars{numOfWheels=0, price=15.75, IsHavingAirBags=false}";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-
     }
 
     /**
@@ -150,5 +116,28 @@ public class FuelCarsTest {
         instance.carModel();
         // TODO review the generated test code and remove the default call to fail.
     }
-    
+
+    /**
+     * Test of main method, of class FuelCars.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        FuelCars.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of toString method, of class FuelCars.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
 }

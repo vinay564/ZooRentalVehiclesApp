@@ -13,29 +13,31 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *  Test using TrainTest using JUnit5
- *  @author Sai Kaushik Beeram
+ * Test using TrainTest using JUnit5
+ *
+ * @author Sai Kaushik Beeram
  */
 public class TrainTest {
-          public static Train instance;
+
+    public static Train instance;
 
     public TrainTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
-          instance = new Train("SpeedTrain","Goods",4455.2);
+        instance = new Train(2.4, 5, 3.9, "train", "Yes", 2.3);
 
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
@@ -77,7 +79,7 @@ public class TrainTest {
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
         double expResult = 0.0;
-        double result = instance.getDistanceTravelled();
+        double result = instance.getDistanceTravelled_miles();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
@@ -89,7 +91,7 @@ public class TrainTest {
     public void testSetDistanceTravelled() {
         System.out.println("setDistanceTravelled");
         double distanceTravelled = 0.0;
-        instance.setDistanceTravelled(distanceTravelled);
+        instance.setDistanceTravelled_miles(distanceTravelled);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -150,5 +152,5 @@ public class TrainTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
-    
+
 }
