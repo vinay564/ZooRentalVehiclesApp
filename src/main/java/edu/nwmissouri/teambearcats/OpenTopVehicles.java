@@ -61,7 +61,7 @@ public class OpenTopVehicles extends RentalLightVehicles {
 
     @Override
     public void speed() {
-        System.out.println("My cost is $"+priceIn_dollars);
+        System.out.println("My Top speed is 200Mph.My cost is $"+priceIn_dollars);
     }
 
     /**
