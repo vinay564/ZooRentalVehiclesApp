@@ -5,103 +5,142 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *Airplane class (derived subclass of the superclass RentalHeavyVehicles)
+ * Airplane class (derived subclass of the superclass RentalHeavyVehicles)
+ *
  * @author Satish Vagulapuram
  */
 public class Airplane extends RentalHeavyVehicles {
 
-/**
- * Declaration of private variables
- */
-    private int distanceTravelled = 4;
-    private double ticketPrice = 0.0;
-    private int noOfWings = 2;
-/**
- * getter method for DistanceTravelled
- * @return 
- */
-    public int getDistanceTravelled() {
-        return distanceTravelled;
+    /**
+     * Declaration of private variables
+     */
+    private int distanceTravelled_miles;
+    private double ticketPrice_dollars;
+    private int noOfWings;
+
+    /**
+     * Constructor
+     * @param distanceTravelled_miles
+     * @param ticketPrice_dollars
+     * @param noOfWings
+     * @param vehicleName
+     * @param carryHeavyLoad
+     * @param vehicleWeight 
+     */
+    
+    
+     public Airplane(int distanceTravelled_miles, double ticketPrice_dollars, int noOfWings, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        super(vehicleName, carryHeavyLoad, vehicleWeight);
+        this.distanceTravelled_miles = distanceTravelled_miles;
+        this.ticketPrice_dollars = ticketPrice_dollars;
+        this.noOfWings = noOfWings;
     }
-/**
- * setter method for DistanceTravelled
- * @return 
- */
-    public void setDistanceTravelled(int distanceTravelled) {
-        this.distanceTravelled = distanceTravelled;
+
+    /**
+     * getter method for DistanceTravelled_miles
+     *
+     * @return
+     */
+    public int getDistanceTravelled_miles() {
+        return distanceTravelled_miles;
     }
-/**
- * getter method for ticketPrice
- * @return 
- */
-    public double getTicketPrice() {
-        return ticketPrice;
+
+    /**
+     * setter method for DistanceTravelled_miles
+     *
+     * @return
+     */
+    public void setDistanceTravelled_miles(int distanceTravelled) {
+        this.distanceTravelled_miles = distanceTravelled_miles;
     }
-/**
- * setter method
- * @param ticketPrice 
- */
-    public void setTicketPrice(double ticketPrice) {
-        this.ticketPrice = ticketPrice;
+
+    /**
+     * getter method for ticketPrice_dollars
+     *
+     * @return
+     */
+    public double getTicketPrice_dollars() {
+        return ticketPrice_dollars;
     }
-/**
- * getter method for getOfWings
- * @return 
- */
+
+    /**
+     * setter method
+     *
+     * @param ticketPrice_dollars
+     */
+    public void setTicketPrice_dollars(double ticketPrice_dollars) {
+        this.ticketPrice_dollars = ticketPrice_dollars;
+    }
+
+    /**
+     * getter method for getOfWings
+     *
+     * @return
+     */
     public int getNoOfWings() {
         return noOfWings;
     }
-/**
- * setter method
- * @param noOfWings 
- */
+
+    /**
+     * setter method
+     *
+     * @param noOfWings
+     */
 
     public void setNoOfWings(int noOfWings) {
         this.noOfWings = noOfWings;
     }
-/**
- * toString method
- * @return 
- */
-    @Override
-    public String toString() {
-        return "Airplane{" + "distanceTravelled=" + distanceTravelled + ", ticketPrice=" + ticketPrice + ", noOfWings=" + noOfWings + '}';
-    }
-/**
- * Constructor
- * @param vehicleName
- * @param carryHeavyLoad
- * @param vehicleWeight 
- */
-    public Airplane(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-        super(vehicleName, carryHeavyLoad, vehicleWeight);
-    }
-/**
- * Overriding the move method 
- */
+
+    /**
+     * Overriding the move method
+     */
     @Override
     public void move() {
-        System.out.println("I move on air");
+        System.out.println("I  have "+noOfWings+ " wheels to move on air");
     }
-/**
- * Overriding the capacity method
- */
+
+    /**
+     * Overriding the capacity method
+     */
     @Override
     public void capacity() {
-        System.out.println("I have more passenger capacity");
+        System.out.println("I have 8 seats capacity");
     }
-/**
- * Overriding the price
- */
+
+    /**
+     * Overriding the price
+     */
     @Override
     public void price() {
-        System.out.println("I'm costly");
+        System.out.println("My Ticket Price is $" +this.ticketPrice_dollars );
     }
-/**
- * Overriding the foodMenu
- */
+
+    /**
+     * foodMenu method
+     */
     public void foodMenu() {
         System.out.println("I provide food while travelling");
     }
 
+    public static void main(String[] args) {
+
+        Airplane airplaneObj = new Airplane(2, 3.3, 3,"airplane", "Yes", 3.4);
+
+        airplaneObj.move();
+        airplaneObj.capacity();
+        airplaneObj.price();
+        airplaneObj.foodMenu();
+        
+
+    }
+
+    /**
+     * toString method
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Airplane{" + "distanceTravelled_miles=" + distanceTravelled_miles + ", ticketPrice_dollars=" + ticketPrice_dollars + ", noOfWings=" + noOfWings + '}';
+    }
 }

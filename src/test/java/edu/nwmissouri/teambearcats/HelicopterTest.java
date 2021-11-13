@@ -24,7 +24,7 @@ public class HelicopterTest {
     
     @BeforeAll
     public static void setUpClass() {
-                  instance = new Helicopter(2,"Rohan",4,"Helicopterautoengine","food",1.2);
+                  instance = new Helicopter(4, "Jerry", 4, 55.0, "Heli", "Yes", 50.0);
 
     }
     
@@ -93,7 +93,7 @@ public class HelicopterTest {
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
         int expResult = 0;
-        int result = instance.getDistanceTravelled();
+        int result = instance.getDistanceTravelled_miles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
@@ -105,7 +105,7 @@ public class HelicopterTest {
     public void testSetDistanceTravelled() {
         System.out.println("setDistanceTravelled");
         int distanceTravelled = 0;
-        instance.setDistanceTravelled(distanceTravelled);
+        instance.setDistanceTravelled_miles(distanceTravelled);
         // TODO review the generated test code and remove the default call to fail.
     }
 
