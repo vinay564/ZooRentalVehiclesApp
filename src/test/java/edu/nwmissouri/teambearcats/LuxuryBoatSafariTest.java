@@ -24,7 +24,7 @@ public class LuxuryBoatSafariTest {
     
     @BeforeAll
     public static void setUpClass() {
-                                  instance = new LuxuryBoatSafari("FighterPlane","wargoods",1224.2);
+    instance = new LuxuryBoatSafari(2.4, 5, 3.9, "LuxuryBoatSafari", "Yes", 2.3);
 
     }
     

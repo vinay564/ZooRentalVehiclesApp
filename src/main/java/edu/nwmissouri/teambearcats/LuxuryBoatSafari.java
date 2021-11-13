@@ -10,42 +10,34 @@ package edu.nwmissouri.teambearcats;
  */
 public class LuxuryBoatSafari extends RentalHeavyVehicles{
     
-    private double ticketPrice_dollar=15.75;
-    private int numOfPassengers = 6;
-    private double distancetraveled_miles = 2.2;
-    
+    private double ticketPrice_dollars;
+    private int numOfPassengers;
+    private double distanceTravelled_miles;
+   
+    /**
+ * LuxuryBoatSafari constructor
+ * @param vehicleName is LuxuaryBoatSafari
+ * @param carryHeavyLoad it carries large number of passengers
+ * @param vehicleWeight LuxuarBoat is of HeavyWeight 
+ */
+   
+
     
    
-   /**
-     * move() - general method for vehicle movement 
-     */
-    @Override
-    public void move(){
-        System.out.println("I travels on water");
-    }
 
-    /**
-     * capacity() - general method for vehicle capacity
-     */
-    @Override
-    public void capacity() {
-        System.out.println("Vehicle passenger capacity");
-    }
-
-    /**
-     * price() - general method for vehicle price
-     */
-    @Override
-    public void price() {
-        System.out.println("Price of the Vehicle ");
+    public LuxuryBoatSafari(double ticketPrice_dollars, int numOfPassengers, double distanceTravelled_miles, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+        super(vehicleName, carryHeavyLoad, vehicleWeight);
+        this.ticketPrice_dollars = ticketPrice_dollars;
+        this.numOfPassengers = numOfPassengers;
+        this.distanceTravelled_miles = distanceTravelled_miles;
     }
 
     public double getTicketPrice() {
-        return ticketPrice_dollar;
+        return ticketPrice_dollars;
     }
 
-    public void setTicketPrice(double ticketPrice) {
-        this.ticketPrice_dollar = ticketPrice;
+    public void setTicketPrice(double ticketPrice_dollars) {
+        this.ticketPrice_dollars = ticketPrice_dollars;
     }
 
     public int getNumOfPassengers() {
@@ -57,29 +49,55 @@ public class LuxuryBoatSafari extends RentalHeavyVehicles{
     }
     
     public double getDistanceTraveled() {
-        return distancetraveled_miles;
+        return distanceTravelled_miles;
     }
     
-    public void setDistanceTraveled(double distancetraveled) {
-        this.distancetraveled_miles = distancetraveled;
+    public void setDistanceTraveled(double distanceTravelled_miles) {
+        this.distanceTravelled_miles = distanceTravelled_miles;
     }
     /**
-     * tostring() of LuxuryBoatSafari 
+     * move() - general method for vehicle movement 
+     */
+    @Override
+    public void move(){
+        System.out.println("I  have travelled "+distanceTravelled_miles);
+    }
+
+    /**
+     * capacity() - general method for vehicle capacity
+     */
+    @Override
+    public void capacity() {
+        System.out.println("I have capacity of " +numOfPassengers);
+    }
+
+    /**
+     * price() - general method for vehicle price
+     */
+    @Override
+    public void price() {
+        System.out.println("My cost is " + ticketPrice_dollars);
+    }
+
+    public static void main(String[] args) {
+
+        LuxuryBoatSafari luxuryBoatSafariObj = new LuxuryBoatSafari(2.4, 5, 3.9, "LuxuryBoatSafari", "Yes", 2.3);
+
+        luxuryBoatSafariObj.move();
+        luxuryBoatSafariObj.capacity();
+        luxuryBoatSafariObj.price();
+
+    }
+
+    /**
+     * toString() of LuxuryBoatSafari 
      * @return 
      */
     @Override
     public String toString() {
-        return "LuxuryBoatSafari{" + "ticketPrice=" + ticketPrice_dollar + ", numOfPassengers=" + numOfPassengers + '}';
-    }
-/**
- * LuxuryBoatSafari constructor
- * @param vehicleName is LuxuaryBoatSafari
- * @param carryHeavyLoad it carries large number of passengers
- * @param vehicleWeight LuxuarBoat is of HeavyWeight 
- */
-    public LuxuryBoatSafari(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
-        super(vehicleName, carryHeavyLoad, vehicleWeight);
+        return "LuxuryBoatSafari{" + "ticketPrice_dollars=" + ticketPrice_dollars + ", numOfPassengers=" + numOfPassengers + ", distanceTravelled_miles=" + distanceTravelled_miles + '}';
     }
     
-    
+  
+      
 }
