@@ -6,25 +6,26 @@ package edu.nwmissouri.teambearcats;
 
 /**
  * Bus class (derived subclass of the superclass RentalHeavyVehicles)
+ *
  * @author Vinay Manavarthi
- * 
+ *
  */
 public class Bus extends RentalHeavyVehicles {
-        
-      private int numOfWheels = 8 ;
-      private double ticketPrice = 5.0;
 
-     /**
+    private int numOfWheels;
+    private double ticketPrice_dollars;
+
+    /**
      * Bus Constructor
-     * 
+     *
      * @param vehicleName - This is the vehicle name of the BUS
      * @param carryHeavyLoad - Bus carries the heavy load
      * @param vehicleWeight - This is vehicle weight
      */
-
-
-    public Bus(String vehicleName, String carryHeavyLoad, double vehicleWeight) {
+    public Bus(int numOfWheels, double ticketPrice_dollars, String vehicleName, String carryHeavyLoad, double vehicleWeight) {
         super(vehicleName, carryHeavyLoad, vehicleWeight);
+        this.numOfWheels = numOfWheels;
+        this.ticketPrice_dollars = ticketPrice_dollars;
     }
 
     public int getNumOfWheels() {
@@ -36,51 +37,68 @@ public class Bus extends RentalHeavyVehicles {
     }
 
     public double getTicketPrice() {
-        return ticketPrice;
+        return ticketPrice_dollars;
     }
 
-    public void setTicketPrice(double ticketPrice) {
-        this.ticketPrice = ticketPrice;
+    public void setTicketPrice(double ticketPrice_dollars) {
+        this.ticketPrice_dollars = ticketPrice_dollars;
+    }
+
+
+    /**
+     * return seatingCapacity
+     *
+     * @return
+     */
+    public int seatingCapacity() {
+        return 1;
+    }
+
+    /**
+     * return consumes fuel Type
+     *
+     * @return
+     */
+    public void consumes() {
+        System.out.println("I consume more Diesel");
     }
 
     @Override
-    public String toString() {
-        return "Bus{" + "numOfWheels=" + numOfWheels + ", ticketPrice=" + ticketPrice + '}';
-    }
-  
-      
-      
-    
-   /**
-    * return seatingCapacity
-    * @return 
-    */
-      public int seatingCapacity(){
-          return 1;
-    }
-    
-       /**
-    * return consumes fuel Type
-    * @return 
-    */
-    public void consumes(){
-         System.out.println("I consumes more fuel");
-    } 
-      @Override
-    public void move(){
-     System.out.println("I wan to move move! move!");
-      
+    public void move() {
+        System.out.println("I Have "+ this.numOfWheels + " wheels to move");
+
     }
 
     @Override
     public void capacity() {
-    System.out.println("My capacity is 2 ");    
+        System.out.println("Bus have 28 seats capacity");
     }
 
     @Override
     public void price() {
-           System.out.println("My price is very less");   
+        System.out.println("My Ticket Price is $" +this.ticketPrice_dollars );
+    }
+    
+    
+
+    public static void main(String[] args) {
+
+        Bus busObj = new Bus(8,4.5,"BMW", "IM carrying Heavy load", 5000.00);
+
+        busObj.capacity();
+        busObj.consumes();
+        busObj.price();
+        busObj.move();
+
+    }
+    /**
+     * return String
+     * @return 
+     */
+    
+    @Override
+    public String toString() {
+        return "Bus{" + "numOfWheels=" + numOfWheels + ", ticketPrice=" + ticketPrice_dollars + "}";
     }
 
-    
 }
