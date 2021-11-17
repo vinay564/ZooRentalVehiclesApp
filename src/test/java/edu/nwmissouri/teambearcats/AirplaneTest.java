@@ -46,7 +46,7 @@ public class AirplaneTest {
     @Test
     public void testGetDistanceTravelled() {
         System.out.println("getDistanceTravelled");
-        int expResult = 0;
+        int expResult = 2;
         int result = instance.getDistanceTravelled_miles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -69,7 +69,7 @@ public class AirplaneTest {
     @Test
     public void testGetTicketPrice() {
         System.out.println("getTicketPrice");
-        double expResult = 0.0;
+        double expResult = 3.3;
         double result = instance.getTicketPrice_dollars();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
@@ -92,7 +92,7 @@ public class AirplaneTest {
     @Test
     public void testGetNoOfWings() {
         System.out.println("getNoOfWings");
-        int expResult = 0;
+        int expResult = 3;
         int result = instance.getNoOfWings();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -115,7 +115,7 @@ public class AirplaneTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult = "Airplane{distanceTravelled_miles=2, ticketPrice_dollars=3.3, noOfWings=3}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
