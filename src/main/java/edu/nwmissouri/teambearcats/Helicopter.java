@@ -24,8 +24,6 @@ public class Helicopter extends RentalHeavyVehicles {
         this.ticketPrice_dollars = ticketPrice_dollars;
     }
 
-    
-
     /**
      * getter method for getNumOfBlades
      *
@@ -85,7 +83,7 @@ public class Helicopter extends RentalHeavyVehicles {
      */
     @Override
     public void move() {
-        System.out.println("I Have "+ this.numOfBlades + " blades to move on air");
+        System.out.println("I Have " + this.numOfBlades + " blades to move on air");
     }
 
     /**
@@ -101,7 +99,7 @@ public class Helicopter extends RentalHeavyVehicles {
      */
     @Override
     public void price() {
-        System.out.println("My Ticket Price is $" +this.ticketPrice_dollars );
+        System.out.println("My Ticket Price is $" + this.ticketPrice_dollars);
     }
 
     /**
@@ -122,6 +120,7 @@ public class Helicopter extends RentalHeavyVehicles {
         helicopterObj.move();
 
     }
+
     /**
      * ToString
      *
@@ -132,6 +131,4 @@ public class Helicopter extends RentalHeavyVehicles {
         return "Helicopter{" + "numOfBlades=" + numOfBlades + ", nameOfPillots=" + nameOfPillots + ", distanceTravelled_miles=" + distanceTravelled_miles + ", ticketPrice_dollars=" + ticketPrice_dollars + '}';
     }
 
-    
-    
 }
