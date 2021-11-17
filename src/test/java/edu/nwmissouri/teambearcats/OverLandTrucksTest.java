@@ -70,7 +70,7 @@ public class OverLandTrucksTest {
     @Test
     public void testGetTicketPrice() {
         System.out.println("getTicketPrice");
-        double expResult = 0.0;
+        double expResult = 4.5;
         double result = instance.getTicketPrice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
@@ -91,14 +91,14 @@ public class OverLandTrucksTest {
     /**
      * Test of toString method, of class OverLandTrucks.
      */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
+//    @Test
+//    public void testToString() {
+//        System.out.println("toString");
+//        String expResult = "";
+//        String result = instance.toString();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//    }
 
     /**
      * Test of seatingCapacity method, of class OverLandTrucks.
@@ -106,7 +106,7 @@ public class OverLandTrucksTest {
     @Test
     public void testSeatingCapacity() {
         System.out.println("seatingCapacity");
-        int expResult = 0;
+        int expResult = 1;
         int result = instance.seatingCapacity();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
