@@ -80,7 +80,7 @@ public class LuxuryBoatSafariTest {
         System.out.println("getTicketPrice");
         double expResult = 0.0;
         double result = instance.getTicketPrice();
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 2.4);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -101,7 +101,7 @@ public class LuxuryBoatSafariTest {
     @Test
     public void testGetNumOfPassengers() {
         System.out.println("getNumOfPassengers");
-        int expResult = 0;
+        int expResult = 5;
         int result = instance.getNumOfPassengers();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -147,10 +147,11 @@ public class LuxuryBoatSafariTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult;
+        expResult = "LuxuryBoatSafari{ticketPrice_dollars=2.4, numOfPassengers=5, distanceTravelled_miles=0.0}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-    }
+    } 
 
 }
