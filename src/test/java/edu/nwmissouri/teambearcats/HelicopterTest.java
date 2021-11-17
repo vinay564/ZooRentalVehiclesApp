@@ -112,14 +112,14 @@ public class HelicopterTest {
     /**
      * Test of toString method, of class Helicopter.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult ="Helicopter{numOfBlades=4, nameOfPillots=, distanceTravelled_miles=4 ,ticketPrice_dollars=55.0}";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult ="Helicopter{numOfBlades=4, nameOfPillots=, distanceTravelled_miles=4, ticketPrice_dollars=55.0}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of move method, of class Helicopter.
