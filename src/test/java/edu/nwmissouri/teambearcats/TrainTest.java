@@ -126,7 +126,7 @@ public class TrainTest {
         System.out.println("getTicketPrice");
         double expResult = 0.0;
         double result = instance.getTicketPrice();
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 3.9);
         // TODO review the generated test code and remove the default call to fail.
     }
 
@@ -147,10 +147,9 @@ public class TrainTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult = "Train{distanceTravelled_miles=2.4, numOfCoaches=0, ticketPrice_dollar=3.9}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
-
 }

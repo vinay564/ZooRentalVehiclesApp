@@ -94,7 +94,7 @@ public class OverLandTrucksTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "OverLandTrucks{numOfWheels=1,ticketPrice=4.5}";
+        String expResult = "OverLandTrucks{numOfWheels=0, ticketPrice=4.5}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
