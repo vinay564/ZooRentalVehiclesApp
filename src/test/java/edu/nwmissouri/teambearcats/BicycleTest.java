@@ -68,15 +68,15 @@ public class BicycleTest {
     /**
      * Test of getPriceIn_dollars method, of class Bicycle.
      */
-//    @Test
-//    public void testGetPriceIn_dollars() {
-//        System.out.println("getPriceIn_dollars");
-//      
-//        double expResult = 0.0;
-//        double result = instance.getPriceIn_dollars();
-//        assertEquals(expResult, result, 0.0);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testGetPriceIn_dollars() {
+        System.out.println("getPriceIn_dollars");
+      
+        double expResult = 4.5;
+        double result = instance.getPriceIn_dollars();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of setPriceIn_dollars method, of class Bicycle.
