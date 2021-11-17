@@ -95,7 +95,7 @@ public class OpenTopVehiclesTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "OpenTopVehicles{numOfWheels=0,price_dollars=4.5}";
+        String expResult = "OpenTopVehicles{numOfWheels=0, priceIn_dollars=4.5}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
