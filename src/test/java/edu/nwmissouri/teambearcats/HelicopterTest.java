@@ -46,7 +46,7 @@ public class HelicopterTest {
     @Test
     public void testGetNumOfBlades() {
         System.out.println("getNumOfBlades");
-        int expResult = 0;
+        int expResult = 4;
         int result = instance.getNumOfBlades();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -115,7 +115,7 @@ public class HelicopterTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult ="Helicopter{numOfBlades=4, nameOfPillots=, distanceTravelled_miles=4, ticketPrice_dollars=55.0}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
