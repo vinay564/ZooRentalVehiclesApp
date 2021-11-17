@@ -14,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test using ElectricCars using JUnit5
- *
  * @author Nikhil Porika
  */
 public class FuelCarsTest {
@@ -131,13 +130,13 @@ public class FuelCarsTest {
     /**
      * Test of toString method, of class FuelCars.
      */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
+//    @Test
+//    public void testToString() {
+//        System.out.println("toString");
+//        String expResult = "";
+//        String result = instance.toString();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//    }
 
 }
