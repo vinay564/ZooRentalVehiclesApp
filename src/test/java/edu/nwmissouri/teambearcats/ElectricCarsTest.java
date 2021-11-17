@@ -14,26 +14,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test using ElectricCars using JUnit5
+ *
  * @author Nikhil Porika
  */
 public class ElectricCarsTest {
-     public static ElectricCars instance;
+
+    public static ElectricCars instance;
+
     public ElectricCarsTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
-        instance = new ElectricCars("Telsa","Online Booking",4,5.6);
+        instance = new ElectricCars("Telsa", "Online Booking", 4, 5.6);
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
@@ -128,13 +131,13 @@ public class ElectricCarsTest {
     /**
      * Test of toString method, of class ElectricCars.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult = "audi";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
-    
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "ElectricCars{vehicleName=Telsa, numOfPassengers=4}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
 }
