@@ -4,7 +4,6 @@
  */
 package edu.nwmissouri.teambearcats;
 
-import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test using ElectricCars using JUnit5
+ * Test using FuelCarss using JUnit5
  *
  * @author Nikhil Porika
  */
