@@ -4,7 +4,6 @@
  */
 package edu.nwmissouri.teambearcats;
 
-import static edu.nwmissouri.teambearcats.ElectricCarsTest.instance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,7 +12,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test using ElectricCars using JUnit5
+ * Test using FuelCarss using JUnit5
+ *
  * @author Nikhil Porika
  */
 public class FuelCarsTest {
@@ -130,13 +130,13 @@ public class FuelCarsTest {
     /**
      * Test of toString method, of class FuelCars.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult = "";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "FuelCars{numOfPassengers=6, numOfMiles=0.0}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
 }

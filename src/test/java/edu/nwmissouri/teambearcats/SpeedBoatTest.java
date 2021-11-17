@@ -76,7 +76,7 @@ public class SpeedBoatTest {
     @Test
     public void testGetTicketprice() {
         System.out.println("getTicketprice");
-        double expResult = 0.0;
+        double expResult = 45.75;
         double result = instance.getTicketprice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
@@ -122,7 +122,7 @@ public class SpeedBoatTest {
     @Test
     public void testGetNumOfPassengers() {
         System.out.println("getNumOfPassengers");
-        int expResult = 0;
+        int expResult = 1224;
         int result = instance.getNumOfPassengers();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -145,7 +145,7 @@ public class SpeedBoatTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult = "SpeedBoat{ticketprice=45.75, distanceTravelled=75.44, numOfPassengers=1224}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

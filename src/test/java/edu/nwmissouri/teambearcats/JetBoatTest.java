@@ -86,7 +86,7 @@ public class JetBoatTest {
     @Test
     public void testGetTicketPrice() {
         System.out.println("getTicketPrice");
-        double expResult = 0.0;
+        double expResult = 65.56;
         double result = instance.getTicketPrice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
@@ -132,7 +132,7 @@ public class JetBoatTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        String expResult = "";
+        String expResult = "JetBoat{ticketPrice=65.56, distanceTravelled=55.76}";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
