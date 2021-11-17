@@ -91,14 +91,14 @@ public class OverLandTrucksTest {
     /**
      * Test of toString method, of class OverLandTrucks.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult = "";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "OverLandTrucks{numOfWheels=1,ticketPrice=4.5}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of seatingCapacity method, of class OverLandTrucks.
