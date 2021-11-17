@@ -41,7 +41,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of getDistanceTravelled method, of class Airplane.
+     * Test of the getDistanceTravelled method, of class Airplane.
      */
     @Test
     public void testGetDistanceTravelled() {
@@ -64,7 +64,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of getTicketPrice method, of class Airplane.
+     * Test of the getTicketPrice method, of class Airplane.
      */
     @Test
     public void testGetTicketPrice() {
