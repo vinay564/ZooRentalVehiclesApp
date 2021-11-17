@@ -41,7 +41,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of getDistanceTravelled method, of class Airplane.
+     * Test of the getDistanceTravelled method, of class Airplane.
      */
     @Test
     public void testGetDistanceTravelled() {
@@ -64,7 +64,7 @@ public class AirplaneTest {
     }
 
     /**
-     * Test of getTicketPrice method, of class Airplane.
+     * Test of the getTicketPrice method, of class Airplane.
      */
     @Test
     public void testGetTicketPrice() {
@@ -112,14 +112,14 @@ public class AirplaneTest {
     /**
      * Test of toString method, of class Airplane.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult ="Airplane{ distanceTravelled_miles=2, ticketPrice_dollars=3.3, noOfWings=3}";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "Airplane{distanceTravelled_miles=2, ticketPrice_dollars=3.3, noOfWings=3}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of move method, of class Airplane.

@@ -90,14 +90,16 @@ public class BusTest {
     /**
      * Test of toString method, of class Bus.
      */
-  //  @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult = "";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "Bus{numOfWheels=0, ticketPrice=4.5}";
+        
+
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of seatingCapacity method, of class Bus.
