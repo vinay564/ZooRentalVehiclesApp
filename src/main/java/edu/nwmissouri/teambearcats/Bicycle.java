@@ -11,8 +11,8 @@ package edu.nwmissouri.teambearcats;
  */
 public class Bicycle extends RentalLightVehicles {
 
-    private int numOfWheels ;
-    private double priceIn_dollars ;
+    private int numOfWheels;
+    private double priceIn_dollars;
 
     /**
      * Bicycle Constructor
@@ -29,8 +29,6 @@ public class Bicycle extends RentalLightVehicles {
         this.priceIn_dollars = priceIn_dollars;
     }
 
-   
-
     public int getNumOfWheels() {
         return numOfWheels;
     }
@@ -46,22 +44,21 @@ public class Bicycle extends RentalLightVehicles {
     public void setPriceIn_dollars(double priceIn_dollars) {
         this.priceIn_dollars = priceIn_dollars;
     }
-    
-     /**
+
+    /**
      * The move method
      */
     @Override
     public void move() {
-        System.out.println("I  have "+numOfWheels+ " wheels to move on road");
+        System.out.println("I  have " + numOfWheels + " wheels to move on road");
     }
 
     /**
      * The speed method
      */
-
     @Override
     public void speed() {
-        System.out.println("My cost is $"+priceIn_dollars);
+        System.out.println("My cost is $" + priceIn_dollars);
     }
 
     /**
@@ -74,12 +71,12 @@ public class Bicycle extends RentalLightVehicles {
 
     public static void main(String[] args) {
 
-        Bicycle bicycleObj = new Bicycle(2,3.3,"bicycle","Yes",1,3.4);
-       
+        Bicycle bicycleObj = new Bicycle(2, 3.3, "bicycle", "Yes", 1, 3.4);
+
         bicycleObj.gear();
         bicycleObj.move();
         bicycleObj.speed();
-     
+
     }
 
     @Override
