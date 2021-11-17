@@ -92,14 +92,14 @@ public class OpenTopVehiclesTest {
     /**
      * Test of toString method, of class OpenTopVehicles.
      */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        String expResult = "Lexus";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//    }
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        String expResult = "OpenTopVehicles{numOfWheels=0,price_dollars=4.5}";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 
     /**
      * Test of move method, of class OpenTopVehicles.
