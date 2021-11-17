@@ -5,21 +5,23 @@
 package edu.nwmissouri.teambearcats;
 
 /**
- *SpeedBoat (derived subclass from the superclass RentalLightVehicles)
+ * SpeedBoat (derived subclass from the superclass RentalLightVehicles)
+ *
  * @author Rajasheekhar Kota
  */
-public class SpeedBoat extends RentalLightVehicles
-{
-private double ticketprice=45.75;
-private double distanceTravelled=75.44;
-private int numOfPassengers = 6;
+public class SpeedBoat extends RentalLightVehicles {
+
+    private double ticketprice = 45.75;
+    private double distanceTravelled = 75.44;
+    private int numOfPassengers = 6;
 
     /**
      * used constructor for SpeedBoat
+     *
      * @param vehicleName
      * @param booking
      * @param numOfPassengers
-     * @param numOfMiles 
+     * @param numOfMiles
      */
     public SpeedBoat(String vehicleName, String booking, int numOfPassengers, Double numOfMiles) {
         super(vehicleName, booking, numOfPassengers, numOfMiles);
@@ -27,55 +29,59 @@ private int numOfPassengers = 6;
         this.distanceTravelled = distanceTravelled;
         this.numOfPassengers = numOfPassengers;
     }
-    
+
     /**
      * getter is used forTicketPrice
-     * @return 
+     *
+     * @return
      */
     public double getTicketprice() {
         return ticketprice;
     }
-    
+
     /**
      * setter is used TicketPrice
-     * @param ticketprice 
+     *
+     * @param ticketprice
      */
     public void setTicketprice(double ticketprice) {
         this.ticketprice = ticketprice;
     }
-    
+
     /**
      * getter is used for DistanceTravelled
-     * @return 
+     *
+     * @return
      */
     public double getDistanceTravelled() {
         return distanceTravelled;
     }
-    
+
     /**
      * setter is used for DistanceTravelled
-     * @param distanceTravelled 
+     *
+     * @param distanceTravelled
      */
     public void setDistanceTravelled(double distanceTravelled) {
         this.distanceTravelled = distanceTravelled;
     }
-    
+
     public int getNumOfPassengers() {
         return numOfPassengers;
     }
-    
+
     public void setNumOfPassengers(int numOfPassengers) {
         this.numOfPassengers = numOfPassengers;
     }
 
-     /**
+    /**
      * move() - general method for vehicle movement
      */
     @Override
     public void move() {
         System.out.println("SpeedBoat moves on water");
     }
-    
+
     /**
      * speed() - general method for vehicle speed
      */
@@ -83,15 +89,16 @@ private int numOfPassengers = 6;
     public void speed() {
         System.out.println("The average speed of the speedboat is 55km/hr");
     }
+
     /**
      * NumberOfSeats() - general method for Seats in JetBoat
      */
-    public void NumberOfSeats(){
+    public void NumberOfSeats() {
         System.out.println("number of seats in a jetboat.");
     }
-    
-    public static void main(String[] args){
-        SpeedBoat speedboatObj = new SpeedBoat("Speedboat", "Yes",6,75.44);
+
+    public static void main(String[] args) {
+        SpeedBoat speedboatObj = new SpeedBoat("Speedboat", "Yes", 6, 75.44);
         speedboatObj.move();
         speedboatObj.speed();
         speedboatObj.NumberOfSeats();
