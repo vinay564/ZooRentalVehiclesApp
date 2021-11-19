@@ -4,6 +4,9 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import static edu.nwmissouri.teambearcats.FuelCars.exceptionMethod;
+import java.util.Arrays;
+
 /**
  * Electric class (derived subclass of the superclass RentalLightvehicles)
  *
@@ -14,6 +17,29 @@ public class ElectricCars extends RentalLightVehicles {
     private String vehicleName;
     private int numOfPassengers;
     //  private double mile;
+
+    /*
+    exceptionMethod()-for exceptions
+     */
+    public static void exceptionMethod() {
+        int i = 1;
+        int j = 0;
+
+        try {
+            System.out.printf("About to divide %d by %d...", i, j);
+            var result = i / j;
+            System.out.println();
+            // var result = i / j;
+
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
+
+    }
 
     /**
      * Electric Cars constructor
@@ -68,6 +94,7 @@ public class ElectricCars extends RentalLightVehicles {
 
         elec_Obj.move();
         elec_Obj.speed();
+        exceptionMethod();
 
     }
 
