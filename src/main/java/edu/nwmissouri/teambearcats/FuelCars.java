@@ -4,16 +4,31 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import java.util.Arrays;
+
 /**
  * FuelCars class (derived subclass of the superclass RentalLightVehicles)
  *
  * @author Nikhil Porika
  */
 public class FuelCars extends RentalLightVehicles {
+  public static void main(String[] args) {
+
+        FuelCars fuel_Obj = new FuelCars("Audio", "Offline Booking", 6, 79.19);
+
+        fuel_Obj.move();
+        fuel_Obj.speed();
+        
+        exceptionMethod();
+
+    }
+
 
     private int numOfPassengers;
     private double numOfMiles;
     // private boolean IsHavingAirBags;
+    int i= 1;
+    int j= 0;
 
     /**
      * FuelCars Constructor
@@ -68,15 +83,29 @@ public class FuelCars extends RentalLightVehicles {
         System.out.println("The fuelcars has provides so many car models");
     }
 
-    public static void main(String[] args) {
+  /*
+    exceptionMethod()-for exceptions
+    */
+    public static void exceptionMethod(){
+    int i= 1;
+    int j= 0;
+   
 
-        FuelCars fuel_Obj = new FuelCars("Audio", "Offline Booking", 6, 79.19);
+     try {
+            System.out.printf("About to divide %d by %d...", i, j);
+             var result = i/j;
+            System.out.println();
+           // var result = i / j;
 
-        fuel_Obj.move();
-        fuel_Obj.speed();
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
 
     }
-
     /*
     toString method for the vehicle class
      */
@@ -85,3 +114,4 @@ public class FuelCars extends RentalLightVehicles {
         return "FuelCars{" + "numOfPassengers=" + numOfPassengers + ", numOfMiles=" + numOfMiles + '}';
     }
 }
+     
