@@ -4,6 +4,8 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import java.util.Arrays;
+
 /**
  * Bicycle class (derived subclass of the superclass RentalLightVehicles)
  *
@@ -68,6 +70,33 @@ public class Bicycle extends RentalLightVehicles {
     public void gear() {
         System.out.println("Im a gear bicycle ");
     }
+    
+    
+  /*
+    exceptionMethod()-for exceptions
+    */
+    public static void exceptionMethod(){
+    int num1= 1;
+    int num2= 0;
+   
+
+     try {
+            System.out.printf("About to divide %d by %d...", num2, num1);
+             var result = num1/num2;
+            System.out.println();
+           // var result = i / j;
+
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
+
+    }
+    
+    
 
     public static void main(String[] args) {
 
