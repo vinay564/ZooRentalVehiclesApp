@@ -4,6 +4,8 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import java.util.Arrays;
+
 /**
  * OverLandtrucks class (derived subclass of the superclass RentalHeavyVehicles)
  *
@@ -91,6 +93,29 @@ public class OverLandTrucks extends RentalHeavyVehicles {
         Obj.consumes();
         Obj.price();
         Obj.move();
+
+    }
+    /*
+    exceptionMethod()-for exceptions
+    */
+    public static void exceptionMethod(){
+    int a= 1;
+    int b= 0;
+   
+
+     try {
+            System.out.printf("About to divide %d by %d...", a, b);
+             var result = a/b;
+            System.out.println();
+           // var result = a / b;
+
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
 
     }
     /**
