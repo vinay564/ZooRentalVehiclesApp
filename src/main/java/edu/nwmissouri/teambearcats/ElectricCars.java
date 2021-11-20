@@ -22,14 +22,13 @@ public class ElectricCars extends RentalLightVehicles {
     exceptionMethod()-for exceptions
      */
     public static void exceptionMethod() {
-        int i = 1;
-        int j = 0;
+        double a = 4.44;
+        double b = 0.4324;
 
         try {
-            System.out.printf("About to divide %d by %d...", i, j);
-            var result = i / j;
+            System.out.printf("About to divide %d by %d...", a, b);
+            var result = a / b;
             System.out.println();
-            // var result = i / j;
 
         } catch (ArithmeticException ex) {
             System.out.println("ERROR toString():       " + ex.toString());
