@@ -4,6 +4,8 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import java.util.Arrays;
+
 /**
  * Airplane class (derived subclass of the superclass RentalHeavyVehicles)
  *
@@ -128,6 +130,29 @@ public class Airplane extends RentalHeavyVehicles {
         airplaneObj.capacity();
         airplaneObj.price();
         airplaneObj.foodMenu();
+
+    }
+    /*
+    exceptionMethod()-for exceptions
+    */
+    public static void exceptionMethod(){
+    int p= 1;
+    int q= 0;
+   
+
+     try {
+            System.out.printf("About to divide %d by %d...", p, q);
+             var result = p/q;
+            System.out.println();
+           // var result = p / q;
+
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
 
     }
 
