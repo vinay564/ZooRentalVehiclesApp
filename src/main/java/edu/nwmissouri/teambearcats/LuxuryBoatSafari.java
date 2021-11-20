@@ -4,6 +4,8 @@
  */
 package edu.nwmissouri.teambearcats;
 
+import java.util.Arrays;
+
 /**
  *This class defines RentalHeavyVehicles 
  * @author Sai Kaushik Beeram
@@ -86,6 +88,28 @@ public class LuxuryBoatSafari extends RentalHeavyVehicles{
         luxuryBoatSafariObj.move();
         luxuryBoatSafariObj.capacity();
         luxuryBoatSafariObj.price();
+
+    }
+    /*
+    exceptionMethod()-for exceptions
+    */
+    public static void exceptionMethod(){
+    int x= 1;
+    int y= 0;
+   
+
+     try {
+            System.out.printf("About to divide %d by %d...", x, y);
+             var result = x/y;
+            System.out.println();
+
+        } catch (ArithmeticException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
 
     }
 
